@@ -16,7 +16,9 @@ En lastekondisjon for et skip er en sammenstilling av alle vektene med tilhøren
  
 Vi repeterer her *lettskip* og *dødvekt*:
 
-$$ \Delta = W_{lettskip} + W_{dødvekt}  $$
+$$ 
+\Delta = W_{lettskip} + W_{dødvekt}  
+$$
 
 ## Lettskipet
 Lettskipsvekten $ W_{lettskip} $ består av vekten til *tomt* skip; på komponentform vekten av skrog, utrustning og maskineri. 
@@ -59,9 +61,15 @@ Alle vekter som tilsammen utgjør *lettskipet* og *dødvekten* har sine spesifik
 Tørrlastskipet *M/S Freighter* ligger til kai og laster ombord $500[tonn]$ med last. Samtidig blir det bunkret $150[tonn]$ ferskvann. Lettskipvekten er oppgitt til å være $1250[tonn]$. Beregn skipets vektdeplasement når den er ferdig lastet. 
 
 Vi har at $ \Delta = W_{lettskip} + W_{dødvekt}  $, og innsatt får vi:
-$$ \Delta = W_{lettskip} + W_{ferskvann} + W_{payload} $$
-$$ \Delta = 1250[tonn] \times 150[tonn] \times  500[tonn] $$
-$$ \Delta = 1900[tonn] $$
+$$ 
+\Delta = W_{lettskip} + W_{ferskvann} + W_{payload} 
+$$
+$$ 
+\Delta = 1250[tonn] \times 150[tonn] \times  500[tonn] 
+$$
+$$ 
+\Delta = 1900[tonn] 
+$$
  
 ```
 
@@ -70,7 +78,9 @@ $$ \Delta = 1900[tonn] $$
 :name: eksempelberegning-tyngdepunkt
 
 Vi bruker tyngdepunktssatsen for å finne samlet langskips tyngdepunkt for den oppgitte lastekondisjonen: 
-$$ LCG_{lastkondisjon} = \frac{\sum \limits_i^n(m_i\times x_i)}{\sum \limits_i^n( m_i)} $$
+$$ 
+LCG_{lastekondisjon} = \frac{\sum \limits_i^n(m_i\times x_i)}{\sum \limits_i^n( m_i)} 
+$$
 
 og der $x_i$ er avstand fra vekten $m_i$'s tyngdepunkt til skipets felles referansepunkt spant 0 i langskipsretning.
 
@@ -83,9 +93,15 @@ Her kan det være hensiktsmessig å lage en oppstilling i et regneark der samlet
 | Ferskvann | 150      | 12      | 1800        |
 | ∑         | 1900     | ???     | 105550      |
 
-$$ LCG_{lastkondisjon} = \frac{Moment}{Vekt} $$
-$$ LCG_{lastkondisjon} = \frac{105550[tm]}{1900[t]} $$
-$$ LCG_{lastkondisjon} = 55.55[m] $$
+$$ 
+LCG_{lastkondisjon} = \frac{Moment}{Vekt} 
+$$
+$$ 
+LCG_{lastkondisjon} = \frac{105550[tm]}{1900[t]} 
+$$
+$$ 
+LCG_{lastkondisjon} = 55.55[m] 
+$$
 
 ```
 
@@ -111,7 +127,9 @@ Når et rederi skal *kontrahere* et nytt skip vil fart, lastekapasitet og seilin
 
 - seilingsdistanse og fart vil her gi minimumsverdier på drivstoffkapasitet, ferskvannskapasitet og proviant. Her brukes ofte enhetene *nautisk mil* på distanse og *knop* i.e *nautisk mil per time* på fart. Antall timer i seilas får en da ved;   
 
-$$\delta_{seilas} = \frac{distanse[nm]}{ fart[\frac{nm}{h}]}$$
+$$ 
+\delta_{seilas} = \frac{distanse[nm]}{ fart[\frac{nm}{h}]}
+$$
 
 - lastkapasitet vil gi minimumsverdi for størrelse på lasterommet, og som igjen vil sterkt påvirke valg av *hoveddimensjoner*. 
 ```
