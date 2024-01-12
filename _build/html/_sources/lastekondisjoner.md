@@ -1,27 +1,41 @@
+---
+title: Lastekondisjoner
+license: CC-BY-4.0
+github: https://github.com/skipsing/skipsdesign2.git
+authors:
+  - name: Lars Erik Nygård 
+    email: lars.e.nygard@ntnu.no
+    affiliations:
+      - NTNU i Ålesund
+date: 2024/01/12
+---
 
 
-
-# Lastkondisjoner
-
-En lastekondisjon for et skip er en sammenstilling av alle vektene med tilhørende tyngdepunktsplasseringer som i et gitt tidspunkt utgjør skipets *vektsdeplasement*
-
-Vi repeterer her *lettskip* og *dødvekt* (linke) 
+# Lastekondisjoner
+En lastekondisjon for et skip er en sammenstilling av alle vektene med tilhørende tyngdepunktsplasseringer som i et gitt tidspunkt utgjør skipets *vektsdeplasement*. 
+ 
+Vi repeterer her *lettskip* og *dødvekt*:
 
 $$ \Delta = W_{lettskip} + W_{dødvekt}  $$
 
 ## Lettskipet
-
 Lettskipsvekten $ W_{lettskip} $ består av vekten til *tomt* skip; på komponentform vekten av skrog, utrustning og maskineri. 
 
 ## Dødvekten
+Dødvekten består av to bidrag; vekt av skipets egne forbruksvarer (*eng:consumables*) og vekt av personer og last (*eng:[Payload](#payload)*)  
 
-Dødvekten består av to bidrag; vekt av forbruksvarer (*eng:consumables*) og vekt av personer og last (*eng:[Payload](#payload)*)  
+For et handelsfartøy vil vekten av lasten være det største bidraget av dødvekten. Eksempler på last kan være: 
+- Olje for et tankskip
+- Jernmalm for et bulkskip
+- Containere for et containerskip 
+- Biler for en bilferge
 
+```{admonition} Payload
+:class: tip
+Det engelske ordet payload referer til den inntektsgivende lasten som transporteres
+```
 
-### Variable vekter (ikke inntektsgivende) ####
-Dette er forbruksvarer som er ment for fartøyets eget forbruk og som vil variere etter blant annet seilingsdistanse. 
-
-Eksempler på forbruksvarer:
+Eksempler på fartøyets egne forbruksvarer:
 - proviant
 - vann
 - drivstoff 
@@ -29,21 +43,75 @@ Eksempler på forbruksvarer:
 - forbruksmateriell 
 - reservedeler
 
-### Inntektsgivende vekter ####
+Disse vil variere iløpet av en seilas, og kapasiteten er blant annet avhengig av ønsket seilingsdistanse. 
 
-For et handelsfartøy er vekten av lasten det største bidraget av dødvekten. Eksempler på last: 
-- Olje for et tankskip
-- Jernmalm for et bulkskip
-- Containere for et containerskip 
-- Biler for en bilferge
+## Tyngdepunkt
+Alle vekter som tilsammen utgjør *lettskipet* og *dødvekten* har sine spesifikke tyngdepunkter utrykt i skipets eget referansesystem: 
 
+- Vertikalt, $VCG$ -*vertical centre of gravity*
+- Langskips, $LCG$ -*longitudinal centre of gravity*
+- Tverrskips, $TCG$ -*transverse centre of gravity*
 
-```{tip} Payload
-:name: payload
+```{admonition} Eksempelberegning vektdeplasement 
+:class: note 
+:name: eksempelberegning-vektdeplasement
 
-Det engelske ordet payload referer til den inntektsgivende lasten som transporteres og/eller de betalende passasjerene.
+Tørrlastskipet *M/S Freighter* ligger til kai og laster ombord $500[tonn]$ med last. Samtidig blir det bunkret $150[tonn]$ ferskvann. Lettskipvekten er oppgitt til å være $1250[tonn]$. Beregn skipets vektdeplasement når den er ferdig lastet. 
 
+Vi har at $ \Delta = W_{lettskip} + W_{dødvekt}  $, og innsatt får vi:
+$$ \Delta = W_{lettskip} + W_{ferskvann} + W_{payload} $$
+$$ \Delta = 1250[tonn] \times 150[tonn] \times  500[tonn] $$
+$$ \Delta = 1900[tonn] $$
+ 
 ```
+
+
+```{admonition} Eksempelberegning samlet tyngdepunkt 
+:class: note 
+:name: eksempelberegning-tyngdepunkt
+
+Vi bruker tyngdepunktssatsen for å finne samlet langskips tyngdepunkt for den oppgitte lastekondisjonen: 
+$$ LCG_{lastkondisjon} = \frac{\sum \limits_i^n(m_i\times x_i)}{\sum \limits_i^n( m_i)} $$
+
+og der $x_i$ er avstand fra vekten $m_i$'s tyngdepunkt til skipets felles referansepunkt spant 0 i langskipsretning.
+
+Her kan det være hensiktsmessig å lage en oppstilling i et regneark der samlet vekt og vektmoment beregnes: 
+
+| Item      | Vekt [t] | LCG [m] | Moment [tm] |
+| --------- | -------- | ------- | ----------- |
+| Lettskip  | 1250     | 55      | 68750       |
+| Last      | 500      | 70      | 35000       |
+| Ferskvann | 150      | 12      | 1800        |
+| ∑         | 1900     | ???     | 105550      |
+
+$$ LCG_{lastkondisjon} = \frac{Moment}{Vekt} $$
+$$ LCG_{lastkondisjon} = \frac{105550[tm]}{1900[t]} $$
+$$ LCG_{lastkondisjon} = 55.55[m] $$
+
+Tørrlastskipet *M/S Freighter* ligger til kai og laster ombord $500[tonn]$ med last. Samtidig blir det bunkret $150[tonn]$ ferskvann. Lettskipvekten er oppgitt til å være $1250[tonn]$. Beregn skipets vektdeplasement når den er ferdig lastet. 
+
+Vi har at $ \Delta = W_{lettskip} + W_{dødvekt}  $, og innsatt får vi:
+$$ \Delta = W_{lettskip} + W_{ferskvann} + W_{payload} $$
+$$ \Delta = 1250[tonn] \times 150[tonn] \times  500[tonn] $$
+$$ \Delta = 1900[tonn] $$
+ 
+```
+
+
+## Vekts- og tyngdepunktsestmering
+Å etablere anslag på vekt av *lettskip* og *dødvekt* på et tidlig designstadie er essensielt da dette vil styre valg av fartøyets *hoveddimensjoner* i stor grad. Ofte blir det brukt referanseskip og/eller statistikk for å komme fram til et første estimat som en kan bruke i tidlig prosjektering. Ettersom designet utvikler seg vil en gjennomføre mer nøyaktige vektberegninger (_iterasjoner_). 
+
+Vi har at et fartøys *initalstabilitet er gitt ved $ GM_0 = KM-KG $. Plasseringen av tyngdepunktet *G* i høyde over kjølen *K* er derfor også viktig å estimere med rimelig grad av nøyaktighet.
+
+
+### Krengeprøve
+Når et fartøy sjøsettes kan en bruke [Archimedes' prinsipp](https://en.wikipedia.org/wiki/Archimedes%27_principle) til å bestemme deplasementet. Tyngdepunktsplasseringen $VCG$ kan bestemmes med rimelig nøyaktighet ved å gjennomføre en *krengeprøve*. 
+
+
+På større offshoreprosjekter der kapasitet av understell krever operatørene ofte at alle større vekter veies før de monteres ombord. Dette sørger for et eksakt vektsregnskap.
+
+
+
 
 ```{note} Inngangsverdier ved design av et nytt skip
 :name: hva-bestemmer-rederiet
@@ -62,43 +130,17 @@ $$\delta_{seilas} = \frac{distanse[nm]}{ fart[\frac{nm}{h}]}$$
 
 Definisjon på lastekapasitet skiller mellom: 
 - Vektkapasitet
-- Volumkapasitet. Varer eller gods med lav egenvekt vil 
+- Volumkapasitet. Varer eller gods med lav egenvekt vil kreve plass/volum ombord  
 
 ```
 #### Tyngdepunkt
-
 Alle vektene som utgjør lettskipet og dødvekten har sine spesifikke tyngdepunkter i skipets referansesystem. 
 
-```{admonition} Eksempel tyngdepunktsberegning lettskip
-:class: tip 
-:class: dropdown
-:name: lettskipstyngdepunkt
-
-Lasteskipet har under bygging fått veid forskip, midtskip, akterskip og overbygg ved hjelp av kranløft. I tillegg er vekta av kran og hovedmotor kjent.  
-
-| Lengde      | Lpp  | 125      | m    |
-| ----------- | ---- | -------- | ---- |
-| Bredde      | B    | 18       | m    |
-| Dypgang     | Tdwl | 7.5      | m    |
-| Blokk       | CB   | 0.75     | \-   |
-| Dybde       | D    | 11       | m    |
-| Deplasement |      | 12972.66 | tonn |
-| Fart        | V    | 14       | kn   |
-|             |      | 7.202222 |      |
-| Froudetall  |      | 0.205673 | \-   |
-| L/B forhold |      | 6.944444 |      |
-|             |      |          |      |
-| Payload     |      | 8000     | tonn |
-| Forbruk     |      | 1000     | tonn |
-| Lettskip    |      | 4000     | tonn |
-| Antatt depl |      | 13000    |      |
-
-Dette kan løses manuelt i regnearket ved hjelp av tyngdepunktssatsen
-
-$$ X_{G_{tot}} = \frac{\sum \limits}{3} $$
 
 
-```
+
+
+
 
 $$ 3 \times 3 $$
 
