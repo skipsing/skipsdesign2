@@ -114,10 +114,11 @@ $$
 ```
 
 ## Vekts- og tyngdepunktsestmering
-Å etablere anslag på vekt av *lettskip* og *dødvekt* på et tidlig designstadie er essensielt da dette vil styre valg av fartøyets *hoveddimensjoner* i stor grad. Ofte blir det brukt referanseskip og/eller statistikk for å komme fram til et første estimat som en kan bruke i tidlig prosjektering. Ettersom designet utvikler seg vil en gjennomføre mer nøyaktige vektberegninger (_iterasjoner_). 
+Å etablere anslag på vekt av *lettskip* og *dødvekt* i et tidlig designstadie er essensielt da det vil styre valg av fartøyets *hoveddimensjoner* i svært stor grad. Ofte blir det brukt referanseskip og/eller statistikk for å komme fram til et første estimat som en kan bruke i tidlig prosjektering. Ettersom designet utvikler seg vil en gjennomføre mer nøyaktige vektberegninger (_iterasjoner_). 
 
 Vi har at et fartøys *initalstabilitet* er gitt ved $ GM_0 = KM-KG $. Plasseringen av tyngdepunktet *G* i høyde over kjølen *K* er derfor også viktig å estimere med rimelig grad av nøyaktighet.
 
+!['Øving'](https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/tyngdepunkt.ipynb)
 
 ### Krengeprøve
 Når et fartøy sjøsettes kan en bruke [Archimedes' prinsipp](https://en.wikipedia.org/wiki/Archimedes%27_principle) til å bestemme deplasementet. Tyngdepunktsplasseringen $VCG$ kan bestemmes med rimelig nøyaktighet ved å gjennomføre en *krengeprøve*. 
@@ -127,47 +128,3 @@ På større offshoreprosjekter der kapasitet av understell krever operatørene o
 
 
 
-
-```{note} Inngangsverdier ved design av et nytt skip
-:name: hva-bestemmer-rederiet
-
-Når et rederi skal *kontrahere* et nytt skip vil fart, lastekapasitet og seilingsdistanse (uten etterfylling) være sentrale inngangsverdier som de krever at fartøyet skal kunne oppfylle.
-
-- seilingsdistanse og fart vil her gi minimumsverdier på drivstoffkapasitet, ferskvannskapasitet og proviant. Her brukes ofte enhetene *nautisk mil* på distanse og *knop* i.e *nautisk mil per time* på fart. Antall timer i seilas får en da ved;   
-
-$$ 
-\delta_{seilas} = \frac{distanse[nm]}{ fart[\frac{nm}{h}]}
-$$
-
-- lastkapasitet vil gi minimumsverdi for størrelse på lasterommet, og som igjen vil sterkt påvirke valg av *hoveddimensjoner*. 
-```
-
-```{tip} Lastekapasitet
-:name: lastekapasitet-betydning
-
-Definisjon på lastekapasitet skiller mellom: 
-- Vektkapasitet
-- Volumkapasitet. Varer eller gods med lav egenvekt vil kreve plass/volum ombord  
-
-```
-#### Tyngdepunkt
-Alle vektene som utgjør lettskipet og dødvekten har sine spesifikke tyngdepunkter i skipets referansesystem. 
-
-
-
-
-
-
-
-$$ 3 \times 3 $$
-
-Når vekt og tyngdepunkt er kjent kan en regne skipets dypgang og tilhørende stabilitetsegenskaper. 
-
-:::{tip}
-:class: myclass1,myclass2
-:name: a-tip-reference
-Let's give readers a helpful hint!
-:::
-
-
-Et skip vil i de fleste sammenhenger kunne ha mange ulike *lastkondisjoner*. En lastkondisjon er en sammensatt 

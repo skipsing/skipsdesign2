@@ -67,7 +67,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Oppgave 1" href="tyngdepunkt.html" />
-    <link rel="prev" title="Innledning" href="containerfrakt.html" />
+    <link rel="prev" title="Design av fraktebåt for transport av Stressless lenestoler" href="containerfrakt.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -160,13 +160,10 @@ const thebe_selector_output = ".output, .cell_output"
         </ul>
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="emneinfo.html">Emneinfo</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="emneplan.html">Emneplan</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="alufrakt.html">Innledning</a></li>
-
-
-<li class="toctree-l2"><a class="reference internal" href="containerfrakt.html">Innledning</a></li>
-
-
+<li class="toctree-l1"><a class="reference internal" href="emneplan.html">Emneplan</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="prosjekt.html">Langsgående prosjekt</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="alufrakt.html">Design av fraktebåt for transport av rå-aluminium</a></li>
+<li class="toctree-l2"><a class="reference internal" href="containerfrakt.html">Design av fraktebåt for transport av Stressless lenestoler</a></li>
 </ul>
 </li>
 <li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Lastekondisjoner</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -375,10 +372,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dodvekten">Dødvekten</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tyngdepunkt">Tyngdepunkt</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vekts-og-tyngdepunktsestmering">Vekts- og tyngdepunktsestmering</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#krengeprove">Krengeprøve</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Tyngdepunkt</a></li>
-</ul>
-</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#krengeprove">Krengeprøve</a></li>
 </ul>
 </li>
 </ul>
@@ -513,48 +507,13 @@ LCG_{lastkondisjon} = 55.55[m]
 </section>
 <section id="vekts-og-tyngdepunktsestmering">
 <h2>Vekts- og tyngdepunktsestmering<a class="headerlink" href="#vekts-og-tyngdepunktsestmering" title="Permalink to this heading">#</a></h2>
-<p>Å etablere anslag på vekt av <em>lettskip</em> og <em>dødvekt</em> på et tidlig designstadie er essensielt da dette vil styre valg av fartøyets <em>hoveddimensjoner</em> i stor grad. Ofte blir det brukt referanseskip og/eller statistikk for å komme fram til et første estimat som en kan bruke i tidlig prosjektering. Ettersom designet utvikler seg vil en gjennomføre mer nøyaktige vektberegninger (<em>iterasjoner</em>).</p>
+<p>Å etablere anslag på vekt av <em>lettskip</em> og <em>dødvekt</em> i et tidlig designstadie er essensielt da det vil styre valg av fartøyets <em>hoveddimensjoner</em> i svært stor grad. Ofte blir det brukt referanseskip og/eller statistikk for å komme fram til et første estimat som en kan bruke i tidlig prosjektering. Ettersom designet utvikler seg vil en gjennomføre mer nøyaktige vektberegninger (<em>iterasjoner</em>).</p>
 <p>Vi har at et fartøys <em>initalstabilitet</em> er gitt ved <span class="math notranslate nohighlight">\( GM_0 = KM-KG \)</span>. Plasseringen av tyngdepunktet <em>G</em> i høyde over kjølen <em>K</em> er derfor også viktig å estimere med rimelig grad av nøyaktighet.</p>
+<p><img alt="'Øving'" src="https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/tyngdepunkt.ipynb" /></p>
 <section id="krengeprove">
 <h3>Krengeprøve<a class="headerlink" href="#krengeprove" title="Permalink to this heading">#</a></h3>
 <p>Når et fartøy sjøsettes kan en bruke <a class="reference external" href="https://en.wikipedia.org/wiki/Archimedes%27_principle">Archimedes’ prinsipp</a> til å bestemme deplasementet. Tyngdepunktsplasseringen <span class="math notranslate nohighlight">\(VCG\)</span> kan bestemmes med rimelig nøyaktighet ved å gjennomføre en <em>krengeprøve</em>.</p>
 <p>På større offshoreprosjekter der kapasitet av understell krever operatørene ofte at alle større vekter veies før de monteres ombord. Dette sørger for et eksakt vektsregnskap.</p>
-<div class="admonition note" id="hva-bestemmer-rederiet">
-<p class="admonition-title">Note</p>
-<p>Inngangsverdier ved design av et nytt skip</p>
-<p>Når et rederi skal <em>kontrahere</em> et nytt skip vil fart, lastekapasitet og seilingsdistanse (uten etterfylling) være sentrale inngangsverdier som de krever at fartøyet skal kunne oppfylle.</p>
-<ul class="simple">
-<li><p>seilingsdistanse og fart vil her gi minimumsverdier på drivstoffkapasitet, ferskvannskapasitet og proviant. Her brukes ofte enhetene <em>nautisk mil</em> på distanse og <em>knop</em> i.e <em>nautisk mil per time</em> på fart. Antall timer i seilas får en da ved;</p></li>
-</ul>
-<div class="math notranslate nohighlight">
-\[ 
-\delta_{seilas} = \frac{distanse[nm]}{ fart[\frac{nm}{h}]}
-\]</div>
-<ul class="simple">
-<li><p>lastkapasitet vil gi minimumsverdi for størrelse på lasterommet, og som igjen vil sterkt påvirke valg av <em>hoveddimensjoner</em>.</p></li>
-</ul>
-</div>
-<div class="admonition tip" id="lastekapasitet-betydning">
-<p class="admonition-title">Tip</p>
-<p>Lastekapasitet</p>
-<p>Definisjon på lastekapasitet skiller mellom:</p>
-<ul class="simple">
-<li><p>Vektkapasitet</p></li>
-<li><p>Volumkapasitet. Varer eller gods med lav egenvekt vil kreve plass/volum ombord</p></li>
-</ul>
-</div>
-<section id="id1">
-<h4>Tyngdepunkt<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h4>
-<p>Alle vektene som utgjør lettskipet og dødvekten har sine spesifikke tyngdepunkter i skipets referansesystem.</p>
-<div class="math notranslate nohighlight">
-\[ 3 \times 3 \]</div>
-<p>Når vekt og tyngdepunkt er kjent kan en regne skipets dypgang og tilhørende stabilitetsegenskaper.</p>
-<div class="myclass1-myclass2 admonition tip" id="a-tip-reference">
-<p class="admonition-title">Tip</p>
-<p>Let’s give readers a helpful hint!</p>
-</div>
-<p>Et skip vil i de fleste sammenhenger kunne ha mange ulike <em>lastkondisjoner</em>. En lastkondisjon er en sammensatt</p>
-</section>
 </section>
 </section>
 <div class="toctree-wrapper compound">
@@ -598,7 +557,7 @@ LCG_{lastkondisjon} = 55.55[m]
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Innledning</p>
+        <p class="prev-next-title">Design av fraktebåt for transport av Stressless lenestoler</p>
       </div>
     </a>
     <a class="right-next"
@@ -633,10 +592,7 @@ LCG_{lastkondisjon} = 55.55[m]
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dodvekten">Dødvekten</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tyngdepunkt">Tyngdepunkt</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vekts-og-tyngdepunktsestmering">Vekts- og tyngdepunktsestmering</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#krengeprove">Krengeprøve</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Tyngdepunkt</a></li>
-</ul>
-</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#krengeprove">Krengeprøve</a></li>
 </ul>
 </li>
 </ul>
