@@ -6,17 +6,12 @@ root: intro
 chapters:
 - file: emneinfo
 - file: emneplan
-parts:
-  - caption: Lastekondisjoner
-    chapters:
-    - file: lastekondisjoner
-  - caption: Prosjekt
-    chapters:   
-    - file: prosjekt/prosjekt
-      sections:
-      - file: prosjekt/ukeplan/uke3
-      - file: prosjekt/alufrakt
-      - file: prosjekt/containerfrakt
+- file: lastekondisjoner/lastekondisjoner 
+- file: prosjekt/prosjekt
+  sections:
+  - file: prosjekt/ukeplan/uke3
+  - file: prosjekt/alufrakt
+  - file: prosjekt/containerfrakt
 
 # - file: skadestabilitet
 
