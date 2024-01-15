@@ -10,8 +10,8 @@ parts:
   - caption: Lastekondisjoner
     chapters:
     - file: lastekondisjoner
-#    - file: trim
-  - caption: Prosjekt   
+  - caption: Prosjekt
+    chapters:   
     - file: prosjekt/prosjekt
       sections:
       - file: prosjekt/ukeplan/uke3
