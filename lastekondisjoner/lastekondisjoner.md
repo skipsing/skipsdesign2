@@ -53,7 +53,7 @@ Disse vil variere iløpet av en seilas, og kapasiteten er blant annet avhengig a
 :class: note 
 :name: eksempelberegning-vektdeplasement
 
-Tørrlastskipet *M/S Freighter* ligger til kai og laster ombord $500[tonn]$ med last. Samtidig blir det bunkret $150[tonn]$ ferskvann. Lettskipvekten er oppgitt til å være $1250[tonn]$. Beregn skipets vektdeplasement når den er ferdig lastet. 
+Tørrlastskipet *M/S Freighter* ligger til kai og laster ombord $500[t]$ med last. Samtidig blir det bunkret $150[tonn]$ ferskvann. Lettskipvekten er oppgitt til å være $1250[t]$. Beregn skipets vektdeplasement når den er ferdig lastet. 
 
 Vi har at $ \Delta = W_{lettskip} + W_{dødvekt}  $, og innsatt får vi:
 
@@ -62,11 +62,11 @@ $$
 $$
 
 $$ 
-\Delta = 1250[tonn] \times 150[tonn] \times  500[tonn] 
+\Delta = 1250[t] \times 150[t] \times  500[tonn] 
 $$
 
 $$ 
-\Delta = 1900[tonn] 
+\Delta = 1900[t] 
 $$
  
 ```
@@ -74,9 +74,9 @@ $$
 ## Tyngdepunkt
 Alle vekter som tilsammen utgjør *lettskipet* og *dødvekten* har sine spesifikke tyngdepunkter utrykt i skipets eget referansesystem: 
 
-- Vertikalt, $VCG$ -*vertical centre of gravity*
-- Langskips, $LCG$ -*longitudinal centre of gravity*
-- Tverrskips, $TCG$ -*transverse centre of gravity*
+- Vertikalt, $Vcg$ -*vertical centre of gravity*
+- Langskips, $Lcg$ -*longitudinal centre of gravity*
+- Tverrskips, $Tcg$ -*transverse centre of gravity*
 
 ```{admonition} Eksempelberegning samlet tyngdepunkt 
 :class: note 

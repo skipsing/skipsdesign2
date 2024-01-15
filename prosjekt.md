@@ -9,6 +9,3 @@ Gjennom semesteret skal det utvikles og designes et fartøy for transport av var
 - 3d visualisering (MAXSURF + FUSION)
 - 1d skipsbevegelse (LAB/PYTHON)
 
-
-
-## 
