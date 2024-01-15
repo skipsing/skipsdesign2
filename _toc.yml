@@ -12,11 +12,11 @@ parts:
     - file: lastekondisjoner
 #    - file: trim
   - caption: Prosjekt   
-    - file: prosjekt
+    - file: prosjekt/prosjekt
       sections:
-      - file: ukeplan/uke3
-      - file: alufrakt
-      - file: containerfrakt
+      - file: prosjekt/ukeplan/uke3
+      - file: prosjekt/alufrakt
+      - file: prosjekt/containerfrakt
 
 # - file: skadestabilitet
 

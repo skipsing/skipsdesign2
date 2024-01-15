@@ -7,7 +7,7 @@ authors:
     email: lars.e.nygard@ntnu.no
     affiliations:
       - NTNU i Ålesund
-  - name: Håvard Vollset Lien (basert på forelesningsnotater)
+  - name: Håva rd Vollset Lien (basert på forelesningsnotater)
 date: 2024/01/12
 ---
 
@@ -120,7 +120,8 @@ Vi har at et fartøys *initalstabilitet* er gitt ved $ GM_0 = KM-KG $. Plasserin
 
 ## Øving i Jupyter Notebook 
 
-I blackboard finner du en øving med 4 oppgaver som skal løses i Jupyter Notebook. 
+<a href="https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/lastekondisjoner/tyngdepunkt.ipynb" download>Link til øving</a>
+ 
 
 ### Krengeprøve
 Når et fartøy sjøsettes kan en bruke [Archimedes' prinsipp](https://en.wikipedia.org/wiki/Archimedes%27_principle) til å bestemme deplasementet. Tyngdepunktsplasseringen $VCG$ kan bestemmes med rimelig nøyaktighet ved å gjennomføre en *krengeprøve*. 
