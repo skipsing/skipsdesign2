@@ -49,18 +49,11 @@ Eksempler på fartøyets egne forbruksvarer:
 
 Disse vil variere iløpet av en seilas, og kapasiteten er blant annet avhengig av ønsket seilingsdistanse. 
 
-## Tyngdepunkt
-Alle vekter som tilsammen utgjør *lettskipet* og *dødvekten* har sine spesifikke tyngdepunkter utrykt i skipets eget referansesystem: 
-
-- Vertikalt, $VCG$ -*vertical centre of gravity*
-- Langskips, $LCG$ -*longitudinal centre of gravity*
-- Tverrskips, $TCG$ -*transverse centre of gravity*
-
 ```{admonition} Eksempelberegning vektdeplasement 
 :class: note 
 :name: eksempelberegning-vektdeplasement
 
-Tørrlastskipet *M/S Freighter* ligger til kai og laster ombord $500[tonn]$ med last. Samtidig blir det bunkret $150[tonn]$ ferskvann. Lettskipvekten er oppgitt til å være $1250[tonn]$. Beregn skipets vektdeplasement når den er ferdig lastet. 
+Tørrlastskipet *M/S Freighter* ligger til kai og laster ombord $500[t]$ med last. Samtidig blir det bunkret $150[tonn]$ ferskvann. Lettskipvekten er oppgitt til å være $1250[t]$. Beregn skipets vektdeplasement når den er ferdig lastet. 
 
 Vi har at $ \Delta = W_{lettskip} + W_{dødvekt}  $, og innsatt får vi:
 
@@ -69,14 +62,21 @@ $$
 $$
 
 $$ 
-\Delta = 1250[tonn] \times 150[tonn] \times  500[tonn] 
+\Delta = 1250[t] \times 150[t] \times  500[tonn] 
 $$
 
 $$ 
-\Delta = 1900[tonn] 
+\Delta = 1900[t] 
 $$
  
 ```
+
+## Tyngdepunkt
+Alle vekter som tilsammen utgjør *lettskipet* og *dødvekten* har sine spesifikke tyngdepunkter utrykt i skipets eget referansesystem: 
+
+- Vertikalt, $Vcg$ -*vertical centre of gravity*
+- Langskips, $Lcg$ -*longitudinal centre of gravity*
+- Tverrskips, $Tcg$ -*transverse centre of gravity*
 
 ```{admonition} Eksempelberegning samlet tyngdepunkt 
 :class: note 
@@ -113,12 +113,14 @@ $$
 
 ```
 
-## Vekts- og tyngdepunktsestmering
-Å etablere anslag på vekt av *lettskip* og *dødvekt* i et tidlig designstadie er essensielt da det vil styre valg av fartøyets *hoveddimensjoner* i svært stor grad. Ofte blir det brukt referanseskip og/eller statistikk for å komme fram til et første estimat som en kan bruke i tidlig prosjektering. Ettersom designet utvikler seg vil en gjennomføre mer nøyaktige vektberegninger (_iterasjoner_). 
+## Vekts- og tyngdepunktsestimering
+Å etablere anslag på vekt av *lettskip* og *dødvekt* i et tidlig designstadie er essensielt da det vil styre valg av fartøyets *hoveddimensjoner* i svært stor grad. Ofte blir det brukt referanseskip og/eller statistikk for å komme fram til et første estimat som en kan bruke i tidlig prosjektering. Ettersom designet utvikler seg vil en gjennomføre mer nøyaktige vektberegninger (_iterasjoner_). I byggeprosessen er det mulig å veie de ulike byggeblokkene før de sveises sammen. 
 
 Vi har at et fartøys *initalstabilitet* er gitt ved $ GM_0 = KM-KG $. Plasseringen av tyngdepunktet *G* i høyde over kjølen *K* er derfor også viktig å estimere med rimelig grad av nøyaktighet.
 
-!['Øving'](https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/tyngdepunkt.ipynb)
+## Øving i Jupyter Notebook 
+
+I blackboard finner du en øving med 4 oppgaver som skal løses i Jupyter Notebook. 
 
 ### Krengeprøve
 Når et fartøy sjøsettes kan en bruke [Archimedes' prinsipp](https://en.wikipedia.org/wiki/Archimedes%27_principle) til å bestemme deplasementet. Tyngdepunktsplasseringen $VCG$ kan bestemmes med rimelig nøyaktighet ved å gjennomføre en *krengeprøve*. 

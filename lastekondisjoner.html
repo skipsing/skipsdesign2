@@ -66,7 +66,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'lastekondisjoner';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Oppgave 1" href="tyngdepunkt.html" />
+    <link rel="next" title="Øving vekt og tyngdepunktsberegninger" href="tyngdepunkt.html" />
     <link rel="prev" title="Design av fraktebåt for transport av Stressless lenestoler" href="containerfrakt.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -166,14 +166,8 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="containerfrakt.html">Design av fraktebåt for transport av Stressless lenestoler</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Lastekondisjoner</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="tyngdepunkt.html">Oppgave 1</a></li>
-
-
-
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="skadestabilitet.html">Stabilitet ved skade</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Lastekondisjoner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tyngdepunkt.html">Øving vekt og tyngdepunktsberegninger</a></li>
 </ul>
 
     </div>
@@ -371,7 +365,8 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lettskipet">Lettskipet</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dodvekten">Dødvekten</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tyngdepunkt">Tyngdepunkt</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vekts-og-tyngdepunktsestmering">Vekts- og tyngdepunktsestmering</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vekts-og-tyngdepunktsestimering">Vekts- og tyngdepunktsestimering</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#oving-i-jupyter-notebook">Øving i Jupyter Notebook</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#krengeprove">Krengeprøve</a></li>
 </ul>
 </li>
@@ -425,18 +420,9 @@ document.write(`
 <li><p>reservedeler</p></li>
 </ul>
 <p>Disse vil variere iløpet av en seilas, og kapasiteten er blant annet avhengig av ønsket seilingsdistanse.</p>
-</section>
-<section id="tyngdepunkt">
-<h2>Tyngdepunkt<a class="headerlink" href="#tyngdepunkt" title="Permalink to this heading">#</a></h2>
-<p>Alle vekter som tilsammen utgjør <em>lettskipet</em> og <em>dødvekten</em> har sine spesifikke tyngdepunkter utrykt i skipets eget referansesystem:</p>
-<ul class="simple">
-<li><p>Vertikalt, <span class="math notranslate nohighlight">\(VCG\)</span> -<em>vertical centre of gravity</em></p></li>
-<li><p>Langskips, <span class="math notranslate nohighlight">\(LCG\)</span> -<em>longitudinal centre of gravity</em></p></li>
-<li><p>Tverrskips, <span class="math notranslate nohighlight">\(TCG\)</span> -<em>transverse centre of gravity</em></p></li>
-</ul>
 <div class="note admonition" id="eksempelberegning-vektdeplasement">
 <p class="admonition-title">Eksempelberegning vektdeplasement </p>
-<p>Tørrlastskipet <em>M/S Freighter</em> ligger til kai og laster ombord <span class="math notranslate nohighlight">\(500[tonn]\)</span> med last. Samtidig blir det bunkret <span class="math notranslate nohighlight">\(150[tonn]\)</span> ferskvann. Lettskipvekten er oppgitt til å være <span class="math notranslate nohighlight">\(1250[tonn]\)</span>. Beregn skipets vektdeplasement når den er ferdig lastet.</p>
+<p>Tørrlastskipet <em>M/S Freighter</em> ligger til kai og laster ombord <span class="math notranslate nohighlight">\(500[t]\)</span> med last. Samtidig blir det bunkret <span class="math notranslate nohighlight">\(150[tonn]\)</span> ferskvann. Lettskipvekten er oppgitt til å være <span class="math notranslate nohighlight">\(1250[t]\)</span>. Beregn skipets vektdeplasement når den er ferdig lastet.</p>
 <p>Vi har at <span class="math notranslate nohighlight">\( \Delta = W_{lettskip} + W_{dødvekt}  \)</span>, og innsatt får vi:</p>
 <div class="math notranslate nohighlight">
 \[ 
@@ -444,13 +430,22 @@ document.write(`
 \]</div>
 <div class="math notranslate nohighlight">
 \[ 
-\Delta = 1250[tonn] \times 150[tonn] \times  500[tonn] 
+\Delta = 1250[t] \times 150[t] \times  500[tonn] 
 \]</div>
 <div class="math notranslate nohighlight">
 \[ 
-\Delta = 1900[tonn] 
+\Delta = 1900[t] 
 \]</div>
 </div>
+</section>
+<section id="tyngdepunkt">
+<h2>Tyngdepunkt<a class="headerlink" href="#tyngdepunkt" title="Permalink to this heading">#</a></h2>
+<p>Alle vekter som tilsammen utgjør <em>lettskipet</em> og <em>dødvekten</em> har sine spesifikke tyngdepunkter utrykt i skipets eget referansesystem:</p>
+<ul class="simple">
+<li><p>Vertikalt, <span class="math notranslate nohighlight">\(Vcg\)</span> -<em>vertical centre of gravity</em></p></li>
+<li><p>Langskips, <span class="math notranslate nohighlight">\(Lcg\)</span> -<em>longitudinal centre of gravity</em></p></li>
+<li><p>Tverrskips, <span class="math notranslate nohighlight">\(Tcg\)</span> -<em>transverse centre of gravity</em></p></li>
+</ul>
 <div class="note admonition" id="eksempelberegning-tyngdepunkt">
 <p class="admonition-title">Eksempelberegning samlet tyngdepunkt </p>
 <p>Vi bruker tyngdepunktssatsen for å finne samlet langskips tyngdepunkt for den oppgitte lastekondisjonen:</p>
@@ -505,19 +500,20 @@ LCG_{lastkondisjon} = 55.55[m]
 \]</div>
 </div>
 </section>
-<section id="vekts-og-tyngdepunktsestmering">
-<h2>Vekts- og tyngdepunktsestmering<a class="headerlink" href="#vekts-og-tyngdepunktsestmering" title="Permalink to this heading">#</a></h2>
-<p>Å etablere anslag på vekt av <em>lettskip</em> og <em>dødvekt</em> i et tidlig designstadie er essensielt da det vil styre valg av fartøyets <em>hoveddimensjoner</em> i svært stor grad. Ofte blir det brukt referanseskip og/eller statistikk for å komme fram til et første estimat som en kan bruke i tidlig prosjektering. Ettersom designet utvikler seg vil en gjennomføre mer nøyaktige vektberegninger (<em>iterasjoner</em>).</p>
+<section id="vekts-og-tyngdepunktsestimering">
+<h2>Vekts- og tyngdepunktsestimering<a class="headerlink" href="#vekts-og-tyngdepunktsestimering" title="Permalink to this heading">#</a></h2>
+<p>Å etablere anslag på vekt av <em>lettskip</em> og <em>dødvekt</em> i et tidlig designstadie er essensielt da det vil styre valg av fartøyets <em>hoveddimensjoner</em> i svært stor grad. Ofte blir det brukt referanseskip og/eller statistikk for å komme fram til et første estimat som en kan bruke i tidlig prosjektering. Ettersom designet utvikler seg vil en gjennomføre mer nøyaktige vektberegninger (<em>iterasjoner</em>). I byggeprosessen er det mulig å veie de ulike byggeblokkene før de sveises sammen.</p>
 <p>Vi har at et fartøys <em>initalstabilitet</em> er gitt ved <span class="math notranslate nohighlight">\( GM_0 = KM-KG \)</span>. Plasseringen av tyngdepunktet <em>G</em> i høyde over kjølen <em>K</em> er derfor også viktig å estimere med rimelig grad av nøyaktighet.</p>
-<p><img alt="'Øving'" src="https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/tyngdepunkt.ipynb" /></p>
+</section>
+<section id="oving-i-jupyter-notebook">
+<h2>Øving i Jupyter Notebook<a class="headerlink" href="#oving-i-jupyter-notebook" title="Permalink to this heading">#</a></h2>
+<p>I blackboard finner du en øving med 4 oppgaver som skal løses i Jupyter Notebook.</p>
 <section id="krengeprove">
 <h3>Krengeprøve<a class="headerlink" href="#krengeprove" title="Permalink to this heading">#</a></h3>
 <p>Når et fartøy sjøsettes kan en bruke <a class="reference external" href="https://en.wikipedia.org/wiki/Archimedes%27_principle">Archimedes’ prinsipp</a> til å bestemme deplasementet. Tyngdepunktsplasseringen <span class="math notranslate nohighlight">\(VCG\)</span> kan bestemmes med rimelig nøyaktighet ved å gjennomføre en <em>krengeprøve</em>.</p>
 <p>På større offshoreprosjekter der kapasitet av understell krever operatørene ofte at alle større vekter veies før de monteres ombord. Dette sørger for et eksakt vektsregnskap.</p>
 </section>
 </section>
-<div class="toctree-wrapper compound">
-</div>
 </section>
 
     <script type="text/x-thebe-config">
@@ -565,7 +561,7 @@ LCG_{lastkondisjon} = 55.55[m]
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Oppgave 1</p>
+        <p class="prev-next-title">Øving vekt og tyngdepunktsberegninger</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -591,7 +587,8 @@ LCG_{lastkondisjon} = 55.55[m]
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lettskipet">Lettskipet</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dodvekten">Dødvekten</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tyngdepunkt">Tyngdepunkt</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vekts-og-tyngdepunktsestmering">Vekts- og tyngdepunktsestmering</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vekts-og-tyngdepunktsestimering">Vekts- og tyngdepunktsestimering</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#oving-i-jupyter-notebook">Øving i Jupyter Notebook</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#krengeprove">Krengeprøve</a></li>
 </ul>
 </li>
