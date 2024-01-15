@@ -4,8 +4,14 @@
 format: jb-book
 root: intro
 chapters:
-- file: markdown
-- file: notebooks
+- file: emneinfo
+- file: emneplan
+- file: prosjekt
+  sections:
+  - file: alufrakt
+  - file: containerfrakt
 - file: lastekondisjoner 
+  sections:
+  - file: tyngdepunkt
 - file: skadestabilitet
-- file: markdown-notebooks
+

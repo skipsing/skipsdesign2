@@ -1,9 +1,9 @@
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
-title: My sample book
-author: The Jupyter Book Community
-logo: logo.png
+title: Skipsdesign II -Skrogdesign og skrogmotstand
+author: Lars Erik Nygård 
+logo: https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Lines_plan_en.svg/320px-Lines_plan_en.svg.png
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
@@ -30,3 +30,6 @@ repository:
 html:
   use_issues_button: true
   use_repository_button: true
+
+parse:
+   myst_url_schemes: [mailto, http, https]
