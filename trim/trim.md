@@ -1,5 +1,6 @@
 # Trim
 
+## Innledning
 Trim er en beskrivelse på et fartøys flytekondisjon. Ved null trim vil et fartøy ha samme dypgangsavlesning, $T$ både forut og akter.
 Vi sier da at fartøyet flyter på *even keel*. 
 
@@ -14,8 +15,7 @@ Ved langskips ubalanse mellom $LCG$ og $LCB$ vil et fartøy trimme til $LCB$ er 
 Fartøyet vil da rotere om en tverrskips akse, flotasjonsaksen. Vi sier fartøyet *trimmer* om flotasjonspunktet. Volumsenteret av det neddykkede volumet, $LCB$ vil da flytte seg mot den enden som får større dypgang.    
 
 
-```{admonition} Betegnelser for trim
-:class: tip
+## Betegnelser for trim 
 
 ```{figure} https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/trim/images/betegnelser-trim.PNG
 :scale: 50 %
@@ -60,31 +60,49 @@ Motstatt er dypgangen større akter enn forut vil skipet ha en akterlig trim:
 Dypgang midtskips finner en ved å ta gjennomsnitt av dypgang av forut og akter: 
 - $ T_M = \frac{1}{2}(T_A + T_F) $
 
+```
+
 ```{admonition} Fortegn 
 :class: warning
 
 Merk at fortegn på trim kan variere fra land til land og software til software. 
 ```
 
-```{admonition} Trim ved styrlast 
-:class: note
+## Trim ved styrlast 
 
 Definisjonen av trim måles fra *baseline*, (ikke fra kjølinjen). 
-Fartøy med styrlast vil derfor stikke dypere akter enn forut ved null trim
+Fartøy med styrlast vil derfor *stikke dypere* akter enn forut ved null trim. 
 
 ```{figure} https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/trim/images/styrlast-trim.PNG
 :scale: 50 %
  
 Måling av trim for fartøy med styrlast gjøres fra *baseline*
-
 ```
 
+## Hydrostatiske størrelser for trim 
+For å beregne et fartøys trim skal vi introdusere noen nye begreper og størrelser. Disse blir i all hovedsak generert av dataprogram (f.eks Maxsurf). 
 
+- Enhetstrimmomentet
+
+Enhetstrimmomentet, $MCT$, *(eng. Moment to Change Trim)* er momentet som skal til for at fartøyet skal trimme $1[cm]$. Ofte også benevnt $MCT_{1cm}$ eller $MT1cm$. 
+
+$$ MCT_{1cm} = \frac{I_F \times \rho}{100 \times L_{pp}}[\frac{tm}{cm}] $$ 
+
+der $ I_F  $ = Annet arealmoment av vannlinjen om tverrskipsnøytralakse, $LCF$
+
+
+- Økt deplasement per cm neddykking
+
+Ofte referert til som *Tonnes per centimetre*, $TPC$ eller $TP_{1cm}$. 
+
+- Langskips flotasjonsenter 
+
+Dette er ofte referert til som et punkt, men i teorien er det langskipsposisjon til en tverrskipsakse gjennom arealsenteret til vannlinjen, $A_{WL}$. 
+Fartøyet vil trimme (rotere) om dette punktet. I figur under kan en se at for vanlige skrogformer vil LCF vanligvis ligge noe bak nullkryss, mens for en boksformet lekter vil det være i samme punkt som nullkryss.  
+
+```{figure} https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/trim/images/lcf-lekter-skip.PNG
+:scale: 50 %
+ 
+LCF's plassering i forhold til midtskip/nullkryss for ulike skrogformer
 ```
-
-
-
-
-```
-
 
