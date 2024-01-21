@@ -1,0 +1,7 @@
+
+build book
+jupyter-book build ../skipsdesign2
+
+push book to pg pages
+ghp-import -n -p -f _build/html
+
