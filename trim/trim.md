@@ -174,3 +174,61 @@ Under er det vist et eksempel på en hydrostatisk tabell for tråleren M/S Havbr
  
 Hydrostatikktabell M/S Havbryn 
 ```
+
+## Beregning av trim
+
+Som vi husker fra tverrskipstabilitet der krenging ved store vinkler føre til at de hydrostatiske verdiene endrer seg pga skrogformen. Det samme gjelder for trim. Her skiller vi mellom trim forårsaket av *små vekter* og *store vekter* 
+
+## Trim ved små vekter 
+Små vekter er vekter som er så små at de ikke endrer de hydrostatiske verdiene signifikant ved lasting/lossing av vekten. (Tommelfingerregel er maks 10 % av deplasementet, men det kommer også an lengden på armen)
+
+```{figure} https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/trim/images/trim-små-vekter.PNG
+:scale: 50 %
+ 
+Trimmomentet blir beregnet ut fra vektens posisjon fra LCF 
+```
+
+
+__Prosedyre__
+
+1. Legg vekten i *LCF*
+2. Beregn parallel neddykking $\delta T=\frac{W}{TP_{1cm}} $ (eller les ut av hydrostatikktabell).
+3. Flytt vekten til endelig posisjon og beregn trimmende moment $ M_T = W \times h $.
+4. Bestem enhetstrimmomentet $ MCT_{1cm} = \frac{I_F \times \rho}{100 \times L_{pp}}[\frac{tm}{cm}] $. (eller les ut av hydrostatikktabell).
+5. Beregn total trim $ t = \frac{M_T}{MCT_{1cm}}$. 
+6. Fordel trim forut og akter:
+ - $ t_a = LCF \times \frac{t}{L_{pp}} $
+ - $ t_f = (L_{pp} - LCF ) \times \frac{t}{L_{pp}} $
+7. Beregn nye dypganger forut og akter:
+ - $ T_A = T_0 + \delta T \pm t_a $
+ - $ T_F = T_0 + \delta T \pm t_f $
+
+
+## Trim ved store vekter 
+Store vekter er vekter som er så store at vil endre de hydrostatiske verdiene i vesentlig grad. (Tommelfingerregel her er fra 10 % av deplasementet og utover, men det kommer også an lengden på armen)
+
+En ser her på 
+```{figure} https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/trim/images/trim-store-vekter.PNG
+:scale: 50 %
+ 
+Trimmomentet blir beregnet ut fra avstanden mellom *LCB* og *LCG* for fartøyet etter lasting. 
+```
+
+
+__Prosedyre__
+
+1. 1.	Legg den store vekten til utgangsdeplasementet og etabler nytt deplasement $ \Delta_1 $.  
+2. Beregn nytt felles langskips vektstyngdepunkt $ LCG_1 $.
+3. Etabler dypgang $ T_1 $ for nytt deplasement ved *even-keel* tilstanden. 
+4. Bestem følgende hydrostatiske verdier ved den nye dypgangen (fra hydrostatiske tabeller, kurvebladet eller direkte opplysninger):
+ - Langskips oppdriftsenter *LCB*
+ - Langskips flotasjonssenter *LCF*
+ - Enhetstrimmomentet $ MCT_{1cm} $
+5. Beregn trimmende moment som er vektdeplasementet multiplisert med trimarm $ \overline{BG} $, altså avstanden mellom $ LCG_1 $ og $ LCB $. $ MT = \Delta_1 x \overline{BG_1} $ .
+6. Beregn total trim $ t = \frac{M_T}{MCT_{1cm}}$.
+7. Fordel trim forut og akter:
+ - $ t_a = LCF \times \frac{t}{L_{pp}} $
+ - $ t_f = (L_{pp} - LCF ) \times \frac{t}{L_{pp}} $
+8. Beregn nye dypganger forut og akter:
+ - $ T_A = T_1 \pm t_a $
+ - $ T_F = T_1 \pm t_f $
