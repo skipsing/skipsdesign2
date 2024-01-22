@@ -395,7 +395,7 @@ document.write(`
 <h2>Innledning<a class="headerlink" href="#innledning" title="Permalink to this heading">#</a></h2>
 <p>Trim er en beskrivelse på et fartøys flytekondisjon. Ved null trim vil et fartøy ha samme dypgangsavlesning, <span class="math notranslate nohighlight">\(T\)</span> både forut og akter.
 Vi sier da at fartøyet flyter på <em>even keel</em>.</p>
-<p>I situasjoner der de hydrostatiske størrelsene <span class="math notranslate nohighlight">\(LCG\)</span> og <span class="math notranslate nohighlight">\(LCB\)</span> ikke er i samme punkt ved <em>even keel</em> vil fartøyet søke likevekt der disse er ovenfor hverandre. Tyngdepunktet er som regel <em>fast og stasjonært</em> så det vil være oppdriftsenteret som vil flytte på seg.</p>
+<p>I situasjoner der de hydrostatiske størrelsene <span class="math notranslate nohighlight">\(LCG\)</span> og <span class="math notranslate nohighlight">\(LCB\)</span> ikke er i samme punkt ved <em>even keel</em> vil fartøyet søke likevekt der disse er ovenfor hverandre. Tyngdepunktet er som regel <em>fast og stasjonært</em> så det vil være oppdriftsenteret som flytter på seg.</p>
 <figure class="align-default" id="id1">
 <a class="reference internal image-reference" href="https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/trim/images/fartøy-søker-likevekt-ved-trim.PNG"><img alt="https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/trim/images/fartøy-søker-likevekt-ved-trim.PNG" src="https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/trim/images/fartøy-søker-likevekt-ved-trim.PNG" /></a>
 <figcaption>
@@ -510,7 +510,7 @@ Fartøyet vil trimme (rotere) om dette punktet. I figur under kan en se at for v
 <div class="math notranslate nohighlight">
 \[ \downarrow \]</div>
 <div class="math notranslate nohighlight">
-\[ MCT_{1cm} = 246\frac{[tm]}{[m]} \]</div>
+\[ MCT_{1cm} = 246\frac{[tm]}{[cm]} \]</div>
 <p>Det vil si at vi må flytte <span class="math notranslate nohighlight">\(246[t]\)</span> en avstand på <span class="math notranslate nohighlight">\(1[m]\)</span> langskips for at den <em>totale</em> trimmen skal endre seg <span class="math notranslate nohighlight">\(1[cm]\)</span>.</p>
 </div>
 <div class="note admonition">
@@ -564,7 +564,7 @@ Fartøyet vil trimme (rotere) om dette punktet. I figur under kan en se at for v
 </figure>
 <p><strong>Prosedyre</strong></p>
 <ol class="arabic simple">
-<li><p>Legg vekten i <em>LCF</em></p></li>
+<li><p>Legg vekten i <em>LCF</em>.</p></li>
 <li><p>Beregn parallel neddykking <span class="math notranslate nohighlight">\(\delta T=\frac{W}{TP_{1cm}} \)</span> (eller les ut av hydrostatikktabell).</p></li>
 <li><p>Flytt vekten til endelig posisjon og beregn trimmende moment <span class="math notranslate nohighlight">\( M_T = W \times h \)</span>.</p></li>
 <li><p>Bestem enhetstrimmomentet <span class="math notranslate nohighlight">\( MCT_{1cm} = \frac{I_F \times \rho}{100 \times L_{pp}}[\frac{tm}{cm}] \)</span>. (eller les ut av hydrostatikktabell).</p></li>
@@ -605,7 +605,7 @@ Fartøyet vil trimme (rotere) om dette punktet. I figur under kan en se at for v
 <li><p>Enhetstrimmomentet <span class="math notranslate nohighlight">\( MCT_{1cm} \)</span></p></li>
 </ul>
 <ol class="arabic simple" start="5">
-<li><p>Beregn trimmende moment som er vektdeplasementet multiplisert med trimarm <span class="math notranslate nohighlight">\( \overline{BG} \)</span>, altså avstanden mellom <span class="math notranslate nohighlight">\( LCG_1 \)</span> og <span class="math notranslate nohighlight">\( LCB \)</span>. <span class="math notranslate nohighlight">\( MT = \Delta_1 \times \overline{BG_1} \)</span> .</p></li>
+<li><p>Beregn trimmende moment som er vektdeplasementet multiplisert med trimarm <span class="math notranslate nohighlight">\( \overline{BG} \)</span>, altså avstanden mellom <span class="math notranslate nohighlight">\( LCG_1 \)</span> og <span class="math notranslate nohighlight">\( LCB \)</span>. $<span class="math notranslate nohighlight">\( M_T = \Delta_1 \times \overline{BG_1} \)</span>$</p></li>
 <li><p>Beregn total trim <span class="math notranslate nohighlight">\( t = \frac{M_T}{MCT_{1cm}}\)</span>.</p></li>
 <li><p>Fordel trim forut og akter:</p></li>
 </ol>
