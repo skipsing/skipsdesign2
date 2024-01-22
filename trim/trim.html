@@ -369,6 +369,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hydrostatiske-storrelser-for-trim">Hydrostatiske størrelser for trim</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enhetstrimmomentet">Enhetstrimmomentet</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tonn-pr-centimeter-neddykking">Tonn pr centimeter neddykking</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#langskips-flotasjonsenter">Langskips flotasjonsenter</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hydrostatiske-tabeller">Hydrostatiske tabeller</a></li>
@@ -376,7 +377,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#beregning-av-trim-ved-sma-vekter">Beregning av trim ved små vekter</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#beregning-av-trim-ved-store-vekter">Beregning av trim ved store vekter</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eksempel-trim-ved-store-vekter">Eksempel trim ved store vekter</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ovinger-i">Øvinger i</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ovinger">Øvinger</a></li>
 </ul>
             </nav>
         </div>
@@ -394,14 +395,14 @@ document.write(`
 <h2>Innledning<a class="headerlink" href="#innledning" title="Permalink to this heading">#</a></h2>
 <p>Trim er en beskrivelse på et fartøys flytekondisjon. Ved null trim vil et fartøy ha samme dypgangsavlesning, <span class="math notranslate nohighlight">\(T\)</span> både forut og akter.
 Vi sier da at fartøyet flyter på <em>even keel</em>.</p>
-<p>I situasjoner der de hydrostatiske størrelsene <span class="math notranslate nohighlight">\(LCG\)</span> og <span class="math notranslate nohighlight">\(LCB\)</span> ikke er i samme punkt ved <em>even keel</em> vil fartøyet søke likevekt der disse</p>
+<p>I situasjoner der de hydrostatiske størrelsene <span class="math notranslate nohighlight">\(LCG\)</span> og <span class="math notranslate nohighlight">\(LCB\)</span> ikke er i samme punkt ved <em>even keel</em> vil fartøyet søke likevekt der disse er ovenfor hverandre. Tyngdepunktet er som regel <em>fast og stasjonært</em> så det vil være oppdriftsenteret som vil flytte på seg.</p>
 <figure class="align-default" id="id1">
 <a class="reference internal image-reference" href="https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/trim/images/fartøy-søker-likevekt-ved-trim.PNG"><img alt="https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/trim/images/fartøy-søker-likevekt-ved-trim.PNG" src="https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/trim/images/fartøy-søker-likevekt-ved-trim.PNG" /></a>
 <figcaption>
 <p><span class="caption-number">Fig. 1 </span><span class="caption-text">Ved langskips ubalanse mellom <span class="math notranslate nohighlight">\(LCG\)</span> og <span class="math notranslate nohighlight">\(LCB\)</span> vil et fartøy trimme til <span class="math notranslate nohighlight">\(LCB\)</span> er overrett med <span class="math notranslate nohighlight">\(LCG\)</span></span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<p>Fartøyet vil da rotere om en tverrskips akse, flotasjonsaksen. Vi sier fartøyet <em>trimmer</em> om flotasjonspunktet. Volumsenteret av det neddykkede volumet, <span class="math notranslate nohighlight">\(LCB\)</span> vil da flytte seg mot den enden som får større dypgang.</p>
+<p>Fartøyet vil da rotere om en tverrskips akse, flotasjonsaksen. Vi sier fartøyet <em>trimmer</em> om flotasjonspunktet. Volumsenteret av det neddykkede volumet, <span class="math notranslate nohighlight">\(LCB\)</span>, vil da flytte seg mot den enden som får større dypgang.</p>
 </section>
 <section id="betegnelser-for-trim">
 <h2>Betegnelser for trim<a class="headerlink" href="#betegnelser-for-trim" title="Permalink to this heading">#</a></h2>
@@ -470,18 +471,18 @@ Fartøy med styrlast vil derfor <em>stikke dypere</em> akter enn forut ved null 
 <p>Enhetstrimmomentet, <span class="math notranslate nohighlight">\(MCT\)</span>, <em>(eng. Moment to Change Trim)</em> er momentet som skal til for at fartøyet skal trimme <span class="math notranslate nohighlight">\(1[cm]\)</span>. Ofte også benevnt <span class="math notranslate nohighlight">\(MCT_{1cm}\)</span> eller <span class="math notranslate nohighlight">\(MT1cm\)</span>.</p>
 <div class="math notranslate nohighlight">
 \[ MCT_{1cm} = \frac{I_F \times \rho}{100 \times L_{pp}}[\frac{tm}{cm}] \]</div>
-<p>der <span class="math notranslate nohighlight">\( I_F  \)</span> = Annet arealmoment av vannlinjen om tverrskipsnøytralakse, <span class="math notranslate nohighlight">\(LCF\)</span></p>
+<p>der <span class="math notranslate nohighlight">\( I_F  \)</span> = Annet arealmoment av vannlinjen om tverrskipsnøytralakse, <span class="math notranslate nohighlight">\(LCF\)</span>.</p>
 </section>
 <section id="tonn-pr-centimeter-neddykking">
 <h3>Tonn pr centimeter neddykking<a class="headerlink" href="#tonn-pr-centimeter-neddykking" title="Permalink to this heading">#</a></h3>
 <p>Økt deplasement per cm neddykking, ofte referert til som <em>Tonnes per centimetre</em>, <span class="math notranslate nohighlight">\(TPC\)</span> eller <span class="math notranslate nohighlight">\(TP_{1cm}\)</span>, og er definert som:</p>
 <div class="math notranslate nohighlight">
 \[ TP_{1cm} = \frac{A_{WL} \times \rho_{sea}}{1cm}[\frac{t}{cm}] \]</div>
-<ul class="simple">
-<li><p>Langskips flotasjonsenter</p></li>
-</ul>
+</section>
+<section id="langskips-flotasjonsenter">
+<h3>Langskips flotasjonsenter<a class="headerlink" href="#langskips-flotasjonsenter" title="Permalink to this heading">#</a></h3>
 <p>Dette er ofte referert til som et punkt, men i teorien er det langskipsposisjon til en tverrskipsakse gjennom arealsenteret til vannlinjen, <span class="math notranslate nohighlight">\(A_{WL}\)</span>.
-Fartøyet vil trimme (rotere) om dette punktet. I figur under kan en se at for vanlige skrogformer vil LCF vanligvis ligge noe bak nullkryss, mens for en boksformet lekter vil det være i samme punkt som nullkryss.</p>
+Fartøyet vil trimme (rotere) om dette punktet. I figur under kan en se at for vanlige skrogformer vil LCF vanligvis ligge noe bak nullkryss, mens for en boksformet lekter vil det være i samme punkt.</p>
 <figure class="align-default" id="id5">
 <a class="reference internal image-reference" href="https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/trim/images/lcf-lekter-skip.PNG"><img alt="https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/trim/images/lcf-lekter-skip.PNG" src="https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/trim/images/lcf-lekter-skip.PNG" /></a>
 <figcaption>
@@ -626,8 +627,9 @@ Fartøyet vil trimme (rotere) om dette punktet. I figur under kan en se at for v
 Det fylles 400[t] frossen fisk i lasterommet med <span class="math notranslate nohighlight">\(LCG_{last} = 35[m]\)</span> forenfor A.P.</p>
 <p>Basert på hydrostatikktabellen under skal nye dypganger forut og akter beregnes.</p>
 </section>
-<section id="ovinger-i">
-<h2>Øvinger i<a class="headerlink" href="#ovinger-i" title="Permalink to this heading">#</a></h2>
+<section id="ovinger">
+<h2>Øvinger<a class="headerlink" href="#ovinger" title="Permalink to this heading">#</a></h2>
+<p><a href="https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/trim/trim-north-pomor.ipynb" download>Øving trim North Pomor</a></p>
 </section>
 </section>
 
@@ -704,6 +706,7 @@ Det fylles 400[t] frossen fisk i lasterommet med <span class="math notranslate n
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hydrostatiske-storrelser-for-trim">Hydrostatiske størrelser for trim</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enhetstrimmomentet">Enhetstrimmomentet</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tonn-pr-centimeter-neddykking">Tonn pr centimeter neddykking</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#langskips-flotasjonsenter">Langskips flotasjonsenter</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hydrostatiske-tabeller">Hydrostatiske tabeller</a></li>
@@ -711,7 +714,7 @@ Det fylles 400[t] frossen fisk i lasterommet med <span class="math notranslate n
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#beregning-av-trim-ved-sma-vekter">Beregning av trim ved små vekter</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#beregning-av-trim-ved-store-vekter">Beregning av trim ved store vekter</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eksempel-trim-ved-store-vekter">Eksempel trim ved store vekter</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ovinger-i">Øvinger i</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ovinger">Øvinger</a></li>
 </ul>
   </nav></div>
 

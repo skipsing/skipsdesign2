@@ -4,7 +4,7 @@
 Trim er en beskrivelse på et fartøys flytekondisjon. Ved null trim vil et fartøy ha samme dypgangsavlesning, $T$ både forut og akter.
 Vi sier da at fartøyet flyter på *even keel*. 
 
-I situasjoner der de hydrostatiske størrelsene $LCG$ og $LCB$ ikke er i samme punkt ved *even keel* vil fartøyet søke likevekt der disse
+I situasjoner der de hydrostatiske størrelsene $LCG$ og $LCB$ ikke er i samme punkt ved *even keel* vil fartøyet søke likevekt der disse er ovenfor hverandre. Tyngdepunktet er som regel *fast og stasjonært* så det vil være oppdriftsenteret som vil flytte på seg. 
 
 ```{figure} https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/trim/images/fartøy-søker-likevekt-ved-trim.PNG
 :scale: 50 %
@@ -12,7 +12,7 @@ I situasjoner der de hydrostatiske størrelsene $LCG$ og $LCB$ ikke er i samme p
 Ved langskips ubalanse mellom $LCG$ og $LCB$ vil et fartøy trimme til $LCB$ er overrett med $LCG$
 ```
 
-Fartøyet vil da rotere om en tverrskips akse, flotasjonsaksen. Vi sier fartøyet *trimmer* om flotasjonspunktet. Volumsenteret av det neddykkede volumet, $LCB$ vil da flytte seg mot den enden som får større dypgang.    
+Fartøyet vil da rotere om en tverrskips akse, flotasjonsaksen. Vi sier fartøyet *trimmer* om flotasjonspunktet. Volumsenteret av det neddykkede volumet, $LCB$, vil da flytte seg mot den enden som får større dypgang.    
 
 
 ## Betegnelser for trim 
@@ -28,7 +28,6 @@ Dypgang akter $T_A$ og dypgang forut $T_F$
 - Avlest dypgang midtskips: $T_M$ *(eng. draught midship)*
 
 
-
 Avlesning av dypgang kan gjøres visuelt ved hjelp av påmalte/sveiste *fotmerker*. 
 
 ```{figure} https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/trim/images/fotmerker-trim.PNG
@@ -37,7 +36,6 @@ Avlesning av dypgang kan gjøres visuelt ved hjelp av påmalte/sveiste *fotmerke
 Her ser vi to eksempler midtskips til venstre og i baugen til høyre. 
 
 ```
-
 
 ```{admonition} Noen huskeregler 
 :class: note
@@ -88,7 +86,7 @@ Enhetstrimmomentet, $MCT$, *(eng. Moment to Change Trim)* er momentet som skal t
 
 $$ MCT_{1cm} = \frac{I_F \times \rho}{100 \times L_{pp}}[\frac{tm}{cm}] $$ 
 
-der $ I_F  $ = Annet arealmoment av vannlinjen om tverrskipsnøytralakse, $LCF$
+der $ I_F  $ = Annet arealmoment av vannlinjen om tverrskipsnøytralakse, $LCF$. 
 
 
 ### Tonn pr centimeter neddykking
@@ -97,10 +95,10 @@ der $ I_F  $ = Annet arealmoment av vannlinjen om tverrskipsnøytralakse, $LCF$
 
 $$ TP_{1cm} = \frac{A_{WL} \times \rho_{sea}}{1cm}[\frac{t}{cm}] $$
 
-- Langskips flotasjonsenter 
+### Langskips flotasjonsenter 
 
 Dette er ofte referert til som et punkt, men i teorien er det langskipsposisjon til en tverrskipsakse gjennom arealsenteret til vannlinjen, $A_{WL}$. 
-Fartøyet vil trimme (rotere) om dette punktet. I figur under kan en se at for vanlige skrogformer vil LCF vanligvis ligge noe bak nullkryss, mens for en boksformet lekter vil det være i samme punkt som nullkryss.  
+Fartøyet vil trimme (rotere) om dette punktet. I figur under kan en se at for vanlige skrogformer vil LCF vanligvis ligge noe bak nullkryss, mens for en boksformet lekter vil det være i samme punkt. 
 
 ```{figure} https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/trim/images/lcf-lekter-skip.PNG
 :scale: 50 %
@@ -244,4 +242,6 @@ Basert på hydrostatikktabellen under skal nye dypganger forut og akter beregnes
 
 
 
- ## Øvinger i 
+ ## Øvinger 
+
+ <a href="https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/trim/trim-north-pomor.ipynb" download>Øving trim North Pomor</a>
