@@ -4,7 +4,7 @@
 Trim er en beskrivelse på et fartøys flytekondisjon. Ved null trim vil et fartøy ha samme dypgangsavlesning, $T$ både forut og akter.
 Vi sier da at fartøyet flyter på *even keel*. 
 
-I situasjoner der de hydrostatiske størrelsene $LCG$ og $LCB$ ikke er i samme punkt ved *even keel* vil fartøyet søke likevekt der disse er ovenfor hverandre. Tyngdepunktet er som regel *fast og stasjonært* så det vil være oppdriftsenteret som vil flytte på seg. 
+I situasjoner der de hydrostatiske størrelsene $LCG$ og $LCB$ ikke er i samme punkt ved *even keel* vil fartøyet søke likevekt der disse er ovenfor hverandre. Tyngdepunktet er som regel *fast og stasjonært* så det vil være oppdriftsenteret som flytter på seg.
 
 ```{figure} https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/trim/images/fartøy-søker-likevekt-ved-trim.PNG
 :scale: 50 %
@@ -189,7 +189,7 @@ Trimmomentet blir beregnet ut fra vektens posisjon fra LCF
 
 __Prosedyre__
 
-1. Legg vekten i *LCF*
+1. Legg vekten i *LCF*.
 2. Beregn parallel neddykking $\delta T=\frac{W}{TP_{1cm}} $ (eller les ut av hydrostatikktabell).
 3. Flytt vekten til endelig posisjon og beregn trimmende moment $ M_T = W \times h $.
 4. Bestem enhetstrimmomentet $ MCT_{1cm} = \frac{I_F \times \rho}{100 \times L_{pp}}[\frac{tm}{cm}] $. (eller les ut av hydrostatikktabell).
@@ -222,7 +222,7 @@ __Prosedyre__
  - Langskips oppdriftsenter *LCB*
  - Langskips flotasjonssenter *LCF*
  - Enhetstrimmomentet $ MCT_{1cm} $
-5. Beregn trimmende moment som er vektdeplasementet multiplisert med trimarm $ \overline{BG} $, altså avstanden mellom $ LCG_1 $ og $ LCB $. $ MT = \Delta_1 \times \overline{BG_1} $ .
+5. Beregn trimmende moment som er vektdeplasementet multiplisert med trimarm $ \overline{BG} $, altså avstanden mellom $ LCG_1 $ og $ LCB $. $$ M_T = \Delta_1 \times \overline{BG_1} $$ 
 6. Beregn total trim $ t = \frac{M_T}{MCT_{1cm}}$.
 7. Fordel trim forut og akter:
  - $ t_a = LCF \times \frac{t}{L_{pp}} $
