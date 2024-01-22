@@ -61,6 +61,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'prosjekt/ukeplan/uke4';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -361,6 +363,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#status">Status</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trim">Trim</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lastearrangement">Lastearrangement</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#skrogmodellering">Skrogmodellering</a></li>
@@ -377,9 +380,24 @@ document.write(`
                   
   <section id="uke-4-beregning-av-trim-og-siste-finish-pa-skroget-i-prosjektet">
 <h1>Uke 4 Beregning av trim og siste finish på skroget i prosjektet<a class="headerlink" href="#uke-4-beregning-av-trim-og-siste-finish-pa-skroget-i-prosjektet" title="Permalink to this heading">#</a></h1>
+<section id="status">
+<h2>Status<a class="headerlink" href="#status" title="Permalink to this heading">#</a></h2>
+<ul class="contains-task-list simple">
+<li class="task-list-item"><p><input class="task-list-item-checkbox" checked="checked" disabled="disabled" type="checkbox"> Etablere første forslag til hoveddimensjoner basert på rederikrav</p></li>
+<li class="task-list-item"><p><input class="task-list-item-checkbox" checked="checked" disabled="disabled" type="checkbox"> Etablere et forslag til General Arrangement i Autocad (på blokknivå)</p></li>
+<li class="task-list-item"><p><input class="task-list-item-checkbox" checked="checked" disabled="disabled" type="checkbox"> Etablere vektsberegning med tilhørene <span class="math notranslate nohighlight">\(Lcg\)</span> og <span class="math notranslate nohighlight">\(Vcg\)</span> for lastekondisjonen</p></li>
+<li class="task-list-item"><p><input class="task-list-item-checkbox" checked="checked" disabled="disabled" type="checkbox"> Etablere preliminært skrog i Maxsurf med hensyn til hoveddimensjonene som foreslått</p></li>
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> Kontrollere trim i lastekondisjonen basert på <span class="math notranslate nohighlight">\(Lcg\)</span> og <span class="math notranslate nohighlight">\(Lcb\)</span> funnet over.</p></li>
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> Justere arrangement av lasten (endrer <span class="math notranslate nohighlight">\(Lcg\)</span>)</p></li>
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> Justere skrogform (endrer <span class="math notranslate nohighlight">\(Lcb\)</span>)</p></li>
+</ul>
+</section>
 <section id="trim">
 <h2>Trim<a class="headerlink" href="#trim" title="Permalink to this heading">#</a></h2>
-<p>Med de hydrostatiske data fra Maxsurf skal fartøyets trim beregnes (basert på lastarrangement og de vektene som er oppgitt i oppgaven)</p>
+<p>Trening på å beregne trim:
+<a href="https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/trim/trim-north-pomor.ipynb" download>Øving trim North Pomor</a></p>
+<p>Eget prosjekt:
+Med de hydrostatiske data fra Maxsurf skal fartøyets trim beregnes (basert på lastarrangement og de vektene som er oppgitt i oppgaven)</p>
 </section>
 <section id="lastearrangement">
 <h2>Lastearrangement<a class="headerlink" href="#lastearrangement" title="Permalink to this heading">#</a></h2>
@@ -458,6 +476,7 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#status">Status</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trim">Trim</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lastearrangement">Lastearrangement</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#skrogmodellering">Skrogmodellering</a></li>
