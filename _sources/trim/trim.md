@@ -179,7 +179,7 @@ Hydrostatikktabell M/S Havbryn
 
 Som vi husker fra tverrskipstabilitet der krenging ved store vinkler føre til at de hydrostatiske verdiene endrer seg pga skrogformen. Det samme gjelder for trim. Her skiller vi mellom trim forårsaket av *små vekter* og *store vekter* 
 
-## Trim ved små vekter 
+## Beregning av trim ved små vekter 
 Små vekter er vekter som er så små at de ikke endrer de hydrostatiske verdiene signifikant ved lasting/lossing av vekten. (Tommelfingerregel er maks 10 % av deplasementet, men det kommer også an lengden på armen)
 
 ```{figure} https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/trim/images/trim-små-vekter.PNG
@@ -204,20 +204,20 @@ __Prosedyre__
  - $ T_F = T_0 + \delta T \pm t_f $
 
 
-## Trim ved store vekter 
+## Beregning av trim ved store vekter 
 Store vekter er vekter som er så store at vil endre de hydrostatiske verdiene i vesentlig grad. (Tommelfingerregel her er fra 10 % av deplasementet og utover, men det kommer også an lengden på armen)
 
-En ser her på 
 ```{figure} https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/trim/images/trim-store-vekter.PNG
 :scale: 50 %
  
 Trimmomentet blir beregnet ut fra avstanden mellom *LCB* og *LCG* for fartøyet etter lasting. 
+
 ```
 
 
 __Prosedyre__
 
-1. 1.	Legg den store vekten til utgangsdeplasementet og etabler nytt deplasement $ \Delta_1 $.  
+1. Legg den store vekten til utgangsdeplasementet og etabler nytt deplasement $ \Delta_1 $.  
 2. Beregn nytt felles langskips vektstyngdepunkt $ LCG_1 $.
 3. Etabler dypgang $ T_1 $ for nytt deplasement ved *even-keel* tilstanden. 
 4. Bestem følgende hydrostatiske verdier ved den nye dypgangen (fra hydrostatiske tabeller, kurvebladet eller direkte opplysninger):

@@ -164,6 +164,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../lastekondisjoner/lastekondisjoner.html">Lastekondisjoner</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Trim</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../prosjekt/prosjekt.html">Langsgående prosjekt</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../prosjekt/ukeplan/uke4.html">Uke 4 Beregning av trim og siste finish på skroget i prosjektet</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../prosjekt/ukeplan/uke3.html">Uke 3 Vektestimering, hoveddimensjoner og general arrangement</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../prosjekt/alufrakt.html">Design av fraktebåt for transport av rå-aluminium</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../prosjekt/containerfrakt.html">Design av fraktebåt for transport av Stressless lenestoler</a></li>
@@ -372,8 +373,8 @@ document.write(`
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hydrostatiske-tabeller">Hydrostatiske tabeller</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#beregning-av-trim">Beregning av trim</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trim-ved-sma-vekter">Trim ved små vekter</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trim-ved-store-vekter">Trim ved store vekter</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#beregning-av-trim-ved-sma-vekter">Beregning av trim ved små vekter</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#beregning-av-trim-ved-store-vekter">Beregning av trim ved store vekter</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eksempel-trim-ved-store-vekter">Eksempel trim ved store vekter</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ovinger-i">Øvinger i</a></li>
 </ul>
@@ -551,8 +552,8 @@ Fartøyet vil trimme (rotere) om dette punktet. I figur under kan en se at for v
 <h2>Beregning av trim<a class="headerlink" href="#beregning-av-trim" title="Permalink to this heading">#</a></h2>
 <p>Som vi husker fra tverrskipstabilitet der krenging ved store vinkler føre til at de hydrostatiske verdiene endrer seg pga skrogformen. Det samme gjelder for trim. Her skiller vi mellom trim forårsaket av <em>små vekter</em> og <em>store vekter</em></p>
 </section>
-<section id="trim-ved-sma-vekter">
-<h2>Trim ved små vekter<a class="headerlink" href="#trim-ved-sma-vekter" title="Permalink to this heading">#</a></h2>
+<section id="beregning-av-trim-ved-sma-vekter">
+<h2>Beregning av trim ved små vekter<a class="headerlink" href="#beregning-av-trim-ved-sma-vekter" title="Permalink to this heading">#</a></h2>
 <p>Små vekter er vekter som er så små at de ikke endrer de hydrostatiske verdiene signifikant ved lasting/lossing av vekten. (Tommelfingerregel er maks 10 % av deplasementet, men det kommer også an lengden på armen)</p>
 <figure class="align-default" id="id7">
 <a class="reference internal image-reference" href="https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/trim/images/trim-små-vekter.PNG"><img alt="https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/trim/images/trim-små-vekter.PNG" src="https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/trim/images/trim-små-vekter.PNG" /></a>
@@ -581,10 +582,9 @@ Fartøyet vil trimme (rotere) om dette punktet. I figur under kan en se at for v
 <li><p><span class="math notranslate nohighlight">\( T_F = T_0 + \delta T \pm t_f \)</span></p></li>
 </ul>
 </section>
-<section id="trim-ved-store-vekter">
-<h2>Trim ved store vekter<a class="headerlink" href="#trim-ved-store-vekter" title="Permalink to this heading">#</a></h2>
+<section id="beregning-av-trim-ved-store-vekter">
+<h2>Beregning av trim ved store vekter<a class="headerlink" href="#beregning-av-trim-ved-store-vekter" title="Permalink to this heading">#</a></h2>
 <p>Store vekter er vekter som er så store at vil endre de hydrostatiske verdiene i vesentlig grad. (Tommelfingerregel her er fra 10 % av deplasementet og utover, men det kommer også an lengden på armen)</p>
-<p>En ser her på</p>
 <figure class="align-default" id="id8">
 <a class="reference internal image-reference" href="https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/trim/images/trim-store-vekter.PNG"><img alt="https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/trim/images/trim-store-vekter.PNG" src="https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/trim/images/trim-store-vekter.PNG" /></a>
 <figcaption>
@@ -593,10 +593,7 @@ Fartøyet vil trimme (rotere) om dette punktet. I figur under kan en se at for v
 </figure>
 <p><strong>Prosedyre</strong></p>
 <ol class="arabic simple">
-<li><ol class="arabic simple">
 <li><p>Legg den store vekten til utgangsdeplasementet og etabler nytt deplasement <span class="math notranslate nohighlight">\( \Delta_1 \)</span>.</p></li>
-</ol>
-</li>
 <li><p>Beregn nytt felles langskips vektstyngdepunkt <span class="math notranslate nohighlight">\( LCG_1 \)</span>.</p></li>
 <li><p>Etabler dypgang <span class="math notranslate nohighlight">\( T_1 \)</span> for nytt deplasement ved <em>even-keel</em> tilstanden.</p></li>
 <li><p>Bestem følgende hydrostatiske verdier ved den nye dypgangen (fra hydrostatiske tabeller, kurvebladet eller direkte opplysninger):</p></li>
@@ -711,8 +708,8 @@ Det fylles 400[t] frossen fisk i lasterommet med <span class="math notranslate n
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hydrostatiske-tabeller">Hydrostatiske tabeller</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#beregning-av-trim">Beregning av trim</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trim-ved-sma-vekter">Trim ved små vekter</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trim-ved-store-vekter">Trim ved store vekter</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#beregning-av-trim-ved-sma-vekter">Beregning av trim ved små vekter</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#beregning-av-trim-ved-store-vekter">Beregning av trim ved store vekter</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eksempel-trim-ved-store-vekter">Eksempel trim ved store vekter</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ovinger-i">Øvinger i</a></li>
 </ul>

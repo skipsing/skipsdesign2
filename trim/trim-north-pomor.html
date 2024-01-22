@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Langsgående prosjekt &#8212; Skipsdesign II -Skrogdesign og skrogmotstand</title>
+    <title>Trimberegning North Pomor &#8212; Skipsdesign II -Skrogdesign og skrogmotstand</title>
   
   
   
@@ -61,11 +61,11 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'prosjekt/prosjekt';</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'trim/trim-north-pomor';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Uke 4 Beregning av trim og siste finish på skroget i prosjektet" href="ukeplan/uke4.html" />
-    <link rel="prev" title="Trim" href="../trim/trim.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -156,16 +156,16 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <ul class="current nav bd-sidenav">
+        <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../emneinfo.html">Emneinfo</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../emneplan.html">Emneplan</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../lastekondisjoner/lastekondisjoner.html">Lastekondisjoner</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../trim/trim.html">Trim</a></li>
-<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Langsgående prosjekt</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="ukeplan/uke4.html">Uke 4 Beregning av trim og siste finish på skroget i prosjektet</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ukeplan/uke3.html">Uke 3 Vektestimering, hoveddimensjoner og general arrangement</a></li>
-<li class="toctree-l2"><a class="reference internal" href="alufrakt.html">Design av fraktebåt for transport av rå-aluminium</a></li>
-<li class="toctree-l2"><a class="reference internal" href="containerfrakt.html">Design av fraktebåt for transport av Stressless lenestoler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="trim.html">Trim</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../prosjekt/prosjekt.html">Langsgående prosjekt</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../prosjekt/ukeplan/uke4.html">Uke 4 Beregning av trim og siste finish på skroget i prosjektet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../prosjekt/ukeplan/uke3.html">Uke 3 Vektestimering, hoveddimensjoner og general arrangement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../prosjekt/alufrakt.html">Design av fraktebåt for transport av rå-aluminium</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../prosjekt/containerfrakt.html">Design av fraktebåt for transport av Stressless lenestoler</a></li>
 </ul>
 </li>
 </ul>
@@ -239,7 +239,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fprosjekt/prosjekt.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Ftrim/trim-north-pomor.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -269,7 +269,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../_sources/prosjekt/prosjekt.md" target="_blank"
+      <li><a href="../_sources/trim/trim-north-pomor.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -279,7 +279,7 @@ const thebe_selector_output = ".output, .cell_output"
 <span class="btn__icon-container">
   <i class="fas fa-file"></i>
   </span>
-<span class="btn__text-container">.md</span>
+<span class="btn__text-container">.ipynb</span>
 </a>
 </li>
       
@@ -338,7 +338,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -349,11 +351,22 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Langsgående prosjekt</h1>
+    <h1>Trimberegning North Pomor</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#oppgave-a-regn-ut-skipets-gm-i-denne-tilstanden">Oppgave A. Regn ut skipets GM i denne tilstanden</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#oppgave-b-regn-ut-dypgang-forut-og-akter-etter-lastingen">Oppgave B. Regn ut dypgang forut og akter etter lastingen.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#oppgave-c-regn-ut-skipets-metasenterhoyde-gm-etter-lastingen-anta-verdier-for-0-trim-i-utregningene">Oppgave C. Regn ut skipets metasenterhøyde GM etter lastingen. Anta verdier for 0 trim i utregningene.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#oppgave-d-hvor-mye-vann-ma-skipperen-fylle-i-skipets-forpiggtank-for-a-oppna-even-keel">Oppgave D. Hvor mye vann må skipperen fylle i skipets forpiggtank for å oppnå <em>even-keel</em>?</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -363,20 +376,63 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="langsgaende-prosjekt">
-<h1>Langsgående prosjekt<a class="headerlink" href="#langsgaende-prosjekt" title="Permalink to this heading">#</a></h1>
-<p>Gjennom semesteret skal det utvikles og designes et fartøy for transport av varer. Det skal utarbeides og leveres følgende dokumentasjon i mappen:</p>
-<ul class="simple">
-<li><p>General Arrangement (AUTOCAD)</p></li>
-<li><p>Tankplan (inkl lastkondisjoner) (AUTOCAD/MAXSURF)</p></li>
-<li><p>Linjetegning (AUTOCAD/MAXSURF)</p></li>
-<li><p>Stabilitetshåndbok inkl skadestabilitet (MAXSURF/OFFICE)</p></li>
-<li><p>Motstandsprediksjon med modellforsøk (LAB/PYTHON)</p></li>
-<li><p>3d visualisering (MAXSURF + FUSION)</p></li>
-<li><p>1d skipsbevegelse (LAB/PYTHON)</p></li>
-</ul>
-<div class="toctree-wrapper compound">
+  <section class="tex2jax_ignore mathjax_ignore" id="trimberegning-north-pomor">
+<h1>Trimberegning North Pomor<a class="headerlink" href="#trimberegning-north-pomor" title="Permalink to this heading">#</a></h1>
+<p><img alt="North Pomor" src="https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/trim/images/north-pomor.png" /></p>
+<p>Fig. Plattform Supply Vessel North Pomor</p>
+<p><a href="https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/trim/images/hydrostatikk-north-pomor.pdf" download>hydrostatikktabell for North Pomor</a></p>
+<p>Skipet flyter på <em>even-keel</em> med en dypgang på <span class="math notranslate nohighlight">\(T=5.20[m]\)</span>, <span class="math notranslate nohighlight">\(KG=6.88[m]\)</span> og <span class="math notranslate nohighlight">\(L_{pp}=82.2[m]\)</span></p>
+<section id="oppgave-a-regn-ut-skipets-gm-i-denne-tilstanden">
+<h2>Oppgave A. Regn ut skipets GM i denne tilstanden<a class="headerlink" href="#oppgave-a-regn-ut-skipets-gm-i-denne-tilstanden" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Skriv din kode her. </span>
+</pre></div>
 </div>
+</div>
+</div>
+<p><em>Fasit: <span class="math notranslate nohighlight">\(GM=2.48[m]\)</span></em></p>
+<p>Det lastes <span class="math notranslate nohighlight">\(1100[t]\)</span> last på dekk, med <span class="math notranslate nohighlight">\(Lcg_{last}=28.00[m]\)</span> f.f. AP og <span class="math notranslate nohighlight">\(Vcg_{last}=1.5[m]\)</span> over lastedekk. Videre lastes <span class="math notranslate nohighlight">\(600[t]\)</span> metanol i lastetanker under dekk, med <span class="math notranslate nohighlight">\(Lcg=
+40[m]\)</span> f. f. AP, og <span class="math notranslate nohighlight">\(3.10[m]\)</span> over baseline. Lastedekket er plassert <span class="math notranslate nohighlight">\(8.50[m]\)</span>
+over baseline. Metanoltankene er slakke, med en total <span class="math notranslate nohighlight">\(I_{tank}=1250[m^4]\)</span>.
+Metanol har videre en tetthet <span class="math notranslate nohighlight">\(ρ_{metanol}=0.79[t/m^3].\)</span></p>
+</section>
+<section id="oppgave-b-regn-ut-dypgang-forut-og-akter-etter-lastingen">
+<h2>Oppgave B. Regn ut dypgang forut og akter etter lastingen.<a class="headerlink" href="#oppgave-b-regn-ut-dypgang-forut-og-akter-etter-lastingen" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Skriv din kode her</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><em>Fasit: <span class="math notranslate nohighlight">\(T_A=6.54[m]\)</span>, <span class="math notranslate nohighlight">\(T_F=6.08[m]\)</span></em></p>
+</section>
+<section id="oppgave-c-regn-ut-skipets-metasenterhoyde-gm-etter-lastingen-anta-verdier-for-0-trim-i-utregningene">
+<h2>Oppgave C. Regn ut skipets metasenterhøyde GM etter lastingen. Anta verdier for 0 trim i utregningene.<a class="headerlink" href="#oppgave-c-regn-ut-skipets-metasenterhoyde-gm-etter-lastingen-anta-verdier-for-0-trim-i-utregningene" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Skriv din kode her</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><em>Fasit: <span class="math notranslate nohighlight">\(GM = 1.80[m]\)</span></em></p>
+<p>Skipperen ønsker å trimme skipet til even keel. En forpiggtank er plassert med<span class="math notranslate nohighlight">\(Lcg=80.40[m]\)</span> f. f. AP.</p>
+</section>
+<section id="oppgave-d-hvor-mye-vann-ma-skipperen-fylle-i-skipets-forpiggtank-for-a-oppna-even-keel">
+<h2>Oppgave D. Hvor mye vann må skipperen fylle i skipets forpiggtank for å oppnå <em>even-keel</em>?<a class="headerlink" href="#oppgave-d-hvor-mye-vann-ma-skipperen-fylle-i-skipets-forpiggtank-for-a-oppna-even-keel" title="Permalink to this heading">#</a></h2>
+<p>Anta verdier for 0 trim i utregningene.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Skriv din kode her</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><em>Fasit: Det må fylles <span class="math notranslate nohighlight">\(W=96.4[t]\)</span> for å oppnå <em>even-keel</em>. (Bruker prosedyre for små vekter.)</em></p>
+<p><a href="https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/trim/images/løsningsforslag-north-pomor.pdf" download>Fullstendig løsningsforslag</a></p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -392,7 +448,7 @@ document.write(`
         },
         kernelOptions: {
             name: "python3",
-            path: "./prosjekt"
+            path: "./trim"
         },
         predefinedOutput: true
     }
@@ -410,24 +466,6 @@ document.write(`
   
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="../trim/trim.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Trim</p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="ukeplan/uke4.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Uke 4 Beregning av trim og siste finish på skroget i prosjektet</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
 </div></div>
   
 </div>
@@ -437,6 +475,23 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#oppgave-a-regn-ut-skipets-gm-i-denne-tilstanden">Oppgave A. Regn ut skipets GM i denne tilstanden</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#oppgave-b-regn-ut-dypgang-forut-og-akter-etter-lastingen">Oppgave B. Regn ut dypgang forut og akter etter lastingen.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#oppgave-c-regn-ut-skipets-metasenterhoyde-gm-etter-lastingen-anta-verdier-for-0-trim-i-utregningene">Oppgave C. Regn ut skipets metasenterhøyde GM etter lastingen. Anta verdier for 0 trim i utregningene.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#oppgave-d-hvor-mye-vann-ma-skipperen-fylle-i-skipets-forpiggtank-for-a-oppna-even-keel">Oppgave D. Hvor mye vann må skipperen fylle i skipets forpiggtank for å oppnå <em>even-keel</em>?</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
