@@ -4,7 +4,7 @@
 Trim er en beskrivelse på et fartøys flytekondisjon. Ved null trim vil et fartøy ha samme dypgangsavlesning, $T$ både forut og akter.
 Vi sier da at fartøyet flyter på *even keel*. 
 
-I situasjoner der de hydrostatiske størrelsene $LCG$ og $LCB$ ikke er i samme punkt ved *even keel* vil fartøyet søke likevekt der disse
+I situasjoner der de hydrostatiske størrelsene $LCG$ og $LCB$ ikke er i samme punkt ved *even keel* vil fartøyet søke likevekt der disse er ovenfor hverandre. Tyngdepunktet er som regel *fast og stasjonært* så det vil være oppdriftsenteret som vil flytte på seg. 
 
 ```{figure} https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/trim/images/fartøy-søker-likevekt-ved-trim.PNG
 :scale: 50 %
@@ -12,7 +12,7 @@ I situasjoner der de hydrostatiske størrelsene $LCG$ og $LCB$ ikke er i samme p
 Ved langskips ubalanse mellom $LCG$ og $LCB$ vil et fartøy trimme til $LCB$ er overrett med $LCG$
 ```
 
-Fartøyet vil da rotere om en tverrskips akse, flotasjonsaksen. Vi sier fartøyet *trimmer* om flotasjonspunktet. Volumsenteret av det neddykkede volumet, $LCB$ vil da flytte seg mot den enden som får større dypgang.    
+Fartøyet vil da rotere om en tverrskips akse, flotasjonsaksen. Vi sier fartøyet *trimmer* om flotasjonspunktet. Volumsenteret av det neddykkede volumet, $LCB$, vil da flytte seg mot den enden som får større dypgang.    
 
 
 ## Betegnelser for trim 
@@ -28,7 +28,6 @@ Dypgang akter $T_A$ og dypgang forut $T_F$
 - Avlest dypgang midtskips: $T_M$ *(eng. draught midship)*
 
 
-
 Avlesning av dypgang kan gjøres visuelt ved hjelp av påmalte/sveiste *fotmerker*. 
 
 ```{figure} https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/trim/images/fotmerker-trim.PNG
@@ -37,7 +36,6 @@ Avlesning av dypgang kan gjøres visuelt ved hjelp av påmalte/sveiste *fotmerke
 Her ser vi to eksempler midtskips til venstre og i baugen til høyre. 
 
 ```
-
 
 ```{admonition} Noen huskeregler 
 :class: note
@@ -88,7 +86,7 @@ Enhetstrimmomentet, $MCT$, *(eng. Moment to Change Trim)* er momentet som skal t
 
 $$ MCT_{1cm} = \frac{I_F \times \rho}{100 \times L_{pp}}[\frac{tm}{cm}] $$ 
 
-der $ I_F  $ = Annet arealmoment av vannlinjen om tverrskipsnøytralakse, $LCF$
+der $ I_F  $ = Annet arealmoment av vannlinjen om tverrskipsnøytralakse, $LCF$. 
 
 
 ### Tonn pr centimeter neddykking
@@ -97,10 +95,10 @@ der $ I_F  $ = Annet arealmoment av vannlinjen om tverrskipsnøytralakse, $LCF$
 
 $$ TP_{1cm} = \frac{A_{WL} \times \rho_{sea}}{1cm}[\frac{t}{cm}] $$
 
-- Langskips flotasjonsenter 
+### Langskips flotasjonsenter 
 
 Dette er ofte referert til som et punkt, men i teorien er det langskipsposisjon til en tverrskipsakse gjennom arealsenteret til vannlinjen, $A_{WL}$. 
-Fartøyet vil trimme (rotere) om dette punktet. I figur under kan en se at for vanlige skrogformer vil LCF vanligvis ligge noe bak nullkryss, mens for en boksformet lekter vil det være i samme punkt som nullkryss.  
+Fartøyet vil trimme (rotere) om dette punktet. I figur under kan en se at for vanlige skrogformer vil LCF vanligvis ligge noe bak nullkryss, mens for en boksformet lekter vil det være i samme punkt. 
 
 ```{figure} https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/trim/images/lcf-lekter-skip.PNG
 :scale: 50 %
@@ -179,7 +177,7 @@ Hydrostatikktabell M/S Havbryn
 
 Som vi husker fra tverrskipstabilitet der krenging ved store vinkler føre til at de hydrostatiske verdiene endrer seg pga skrogformen. Det samme gjelder for trim. Her skiller vi mellom trim forårsaket av *små vekter* og *store vekter* 
 
-## Trim ved små vekter 
+## Beregning av trim ved små vekter 
 Små vekter er vekter som er så små at de ikke endrer de hydrostatiske verdiene signifikant ved lasting/lossing av vekten. (Tommelfingerregel er maks 10 % av deplasementet, men det kommer også an lengden på armen)
 
 ```{figure} https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/trim/images/trim-små-vekter.PNG
@@ -204,27 +202,27 @@ __Prosedyre__
  - $ T_F = T_0 + \delta T \pm t_f $
 
 
-## Trim ved store vekter 
+## Beregning av trim ved store vekter 
 Store vekter er vekter som er så store at vil endre de hydrostatiske verdiene i vesentlig grad. (Tommelfingerregel her er fra 10 % av deplasementet og utover, men det kommer også an lengden på armen)
 
-En ser her på 
 ```{figure} https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/trim/images/trim-store-vekter.PNG
 :scale: 50 %
  
 Trimmomentet blir beregnet ut fra avstanden mellom *LCB* og *LCG* for fartøyet etter lasting. 
+
 ```
 
 
 __Prosedyre__
 
-1. 1.	Legg den store vekten til utgangsdeplasementet og etabler nytt deplasement $ \Delta_1 $.  
+1. Legg den store vekten til utgangsdeplasementet og etabler nytt deplasement $ \Delta_1 $.  
 2. Beregn nytt felles langskips vektstyngdepunkt $ LCG_1 $.
 3. Etabler dypgang $ T_1 $ for nytt deplasement ved *even-keel* tilstanden. 
 4. Bestem følgende hydrostatiske verdier ved den nye dypgangen (fra hydrostatiske tabeller, kurvebladet eller direkte opplysninger):
  - Langskips oppdriftsenter *LCB*
  - Langskips flotasjonssenter *LCF*
  - Enhetstrimmomentet $ MCT_{1cm} $
-5. Beregn trimmende moment som er vektdeplasementet multiplisert med trimarm $ \overline{BG} $, altså avstanden mellom $ LCG_1 $ og $ LCB $. $ MT = \Delta_1 x \overline{BG_1} $ .
+5. Beregn trimmende moment som er vektdeplasementet multiplisert med trimarm $ \overline{BG} $, altså avstanden mellom $ LCG_1 $ og $ LCB $. $ MT = \Delta_1 \times \overline{BG_1} $ .
 6. Beregn total trim $ t = \frac{M_T}{MCT_{1cm}}$.
 7. Fordel trim forut og akter:
  - $ t_a = LCF \times \frac{t}{L_{pp}} $
@@ -232,3 +230,18 @@ __Prosedyre__
 8. Beregn nye dypganger forut og akter:
  - $ T_A = T_1 \pm t_a $
  - $ T_F = T_1 \pm t_f $
+
+
+## Eksempel trim ved store vekter 
+
+Tråleren M/Tr Havstrand flyter på $T_M = 5.0[m]$ og på *even-keel*. Regellengden $L_{pp}=61.2[m]$
+Det fylles 400[t] frossen fisk i lasterommet med $LCG_{last} = 35[m]$ forenfor A.P.     
+
+Basert på hydrostatikktabellen under skal nye dypganger forut og akter beregnes. 
+
+
+
+
+ ## Øvinger 
+
+ <a href="https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/trim/trim-north-pomor.ipynb" download>Øving trim North Pomor</a>

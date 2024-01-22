@@ -7,8 +7,10 @@ chapters:
 - file: emneinfo
 - file: emneplan
 - file: lastekondisjoner/lastekondisjoner 
+- file: trim/trim
 - file: prosjekt/prosjekt
   sections:
+  - file: prosjekt/ukeplan/uke4
   - file: prosjekt/ukeplan/uke3
   - file: prosjekt/alufrakt
   - file: prosjekt/containerfrakt
