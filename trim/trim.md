@@ -129,7 +129,7 @@ $$ MCT_{1cm} = \frac{\frac{20[m] \times 120[m]^3}{12} \times 1.025[\frac{t}{m^3}
 
 $$ \downarrow $$
 
-$$ MCT_{1cm} = 246\frac{[tm]}{[m]} $$
+$$ MCT_{1cm} = 246\frac{[tm]}{[cm]} $$
 
 Det vil si at vi må flytte $246[t]$ en avstand på $1[m]$ langskips for at den *totale* trimmen skal endre seg $1[cm]$. 
 ```
