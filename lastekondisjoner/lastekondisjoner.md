@@ -7,7 +7,7 @@ authors:
     email: lars.e.nygard@ntnu.no
     affiliations:
       - NTNU i Ålesund
-  - name: Håva rd Vollset Lien (basert på forelesningsnotater)
+  - name: Håvard Vollset Lien (basert på og videreutviklede forelesningsnotater)
 date: 2024/01/12
 ---
 
