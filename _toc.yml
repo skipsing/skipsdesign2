@@ -10,6 +10,7 @@ chapters:
 - file: trim/trim
 - file: prosjekt/prosjekt
   sections:
+  - file: prosjekt/ukeplan/uke5
   - file: prosjekt/ukeplan/uke4
   - file: prosjekt/ukeplan/uke3
   - file: prosjekt/alufrakt
