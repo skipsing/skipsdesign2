@@ -13,7 +13,7 @@ date: 2024/01/12
 
 (section-label)=
 # Lastekondisjoner
-(section-label)=
+
 ## Introduksjon
 En lastekondisjon for et skip er en sammenstilling av alle vektene med tilhørende tyngdepunktsplasseringer som i et gitt tidspunkt utgjør skipets *vektsdeplasement*. 
  
