@@ -8,6 +8,10 @@ chapters:
 - file: emneplan
 - file: lastekondisjoner/lastekondisjoner 
 - file: trim/trim
+- file: intakt-stabilitet/intakt-stabilitet
+  sections:
+  - file: intakt-stabilitet/stabilitetssjekk
+  - file: intakt-stabilitet/stabilitetskriterier
 - file: prosjekt/prosjekt
   sections:
   - file: prosjekt/ukeplan/uke5

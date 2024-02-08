@@ -20,7 +20,19 @@ align: center
 Justering av range som Maxsurf skal krenge båten fra 0-90 grader, og med kalkulasjon for hver 1 grad krenging
 ```
 
-Videre er det
+Videre må vi spesifieres hva som skal logges av data: 
+> Display > Data Format 
+
+```{figure} https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/intakt-stabilitet/images/maxsurf-stability-data.PNG
+---
+scale: 50 %
+align: center
+--- 
+Data som skal logges er GZ verdi og presentasjonen skal være horisontal
+```
+
+Det må spesifiseres at det er store krengevinkler vi skal analysere: 
+
 > Analysis Mode: Large Angle Stability 
 
 så velger vi hvilken lastekondisjon vi skal analysere, og videre *intact*kondisjon. Så er det bare å kjøre analysen med grønn pil. 
@@ -32,11 +44,11 @@ align: center
 --- 
 Analysemodus *Large angle stability* med valgt lastkondisjon (du kan ha gitt denne et annet navn) og lastetilstand skal stå på *intact*
 ```
-Dette tar litt tid så vent til programmet har kjørt seg ferdig. *Loggen* fra analysen må vi så lagre i en egen fil. 
+Dette tar litt tid så vent til programmet har kjørt seg ferdig.  Vi kan inspisere reusultatene fra analysen ved å: 
 
 > Window > Results > Large Angle stability 
 
-Vi får da opp en tabell som viser resultatene som er beregnet for hvert steg i analysen. Videre lagres dataene ved å: 
+Vi får da opp en tabell som viser resultatene som er beregnet for hvert steg i analysen. *Loggen* fra analysen må vi så lagre i en egen fil. 
 
 > File > Save Stability Results As 
 
