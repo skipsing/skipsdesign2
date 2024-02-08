@@ -1,6 +1,24 @@
 # Sjekk av IMO stabilitetskriterier 
 
+
+<p style="text-align:center;">
+    ✍️ Lars Erik Nygård  <a href="mailto:lars.e.nygard@ntnu.no">📧</a> 08.02.2024 📅 
+</p>
+
+-----
+
+
 I denne økten skal vi anvende Python og Jupyter Notebook til å databehandle og kontrollere om skipet tilfredstilller IMO's krav til stabilitet.
+
+
+```{figure} https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/intakt-stabilitet/images/gz-kurve-variasjon.PNG
+---
+scale: 50 %
+align: center
+--- 
+GZ-kurven er sterkt avhengig av skipets form og tyngdepunktsplassering vertikalt
+```
+
 
 ## Stabilitetsanalyse i Maxsurf Stability 
 
@@ -58,8 +76,18 @@ I dialogboksen så gir vi filen et navn og lagrer den på et egnet sted (på hje
 
 Jupyter Notebooken lastes ned herfra: 
 
+<a href="http://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/intakt-stabilitet/images/stab_analyse.zip" download>📥 Download</a> 
 
+Dette er en .zip fil som inneholder:
+- jupyter notebooken
+- eksempelfil.txt (gzdata eksempel)
+- et plot generert fra jupyter notebooken
 
+```{admonition} Filplassering
+:class: caution
+
+Filen med dataene må ligge i samme mappe som jupyter notebooken for at den skal kunne leses! 
+```
 
 
 
