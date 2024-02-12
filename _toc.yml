@@ -14,6 +14,7 @@ chapters:
   - file: intakt-stabilitet/stabilitetskriterier
 - file: prosjekt/prosjekt
   sections:
+  - file: prosjekt/ukeplan/uke7
   - file: prosjekt/ukeplan/uke5
   - file: prosjekt/ukeplan/uke4
   - file: prosjekt/ukeplan/uke3
