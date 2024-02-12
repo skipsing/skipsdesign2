@@ -20,11 +20,28 @@ align: center
 IMO vindkriterie
 ```
 
-## 3 delkrav 
+## 3 samtidig virkende krefter
 
-Av figuren over så er kravene følgende 
+Kriteriet ser på 3 effekter som inntreffer samtidig. 
 
-- 
+- Konstant vind som forårsaker krengende arm $l_{w1}$
+- bølger fra siden som forårsaker krenging med vinkelen $ \phi_1 $
+- Vindkast som forårsaker krengende arm $l_{w2}$
+
+```{figure} https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/intakt-stabilitet/images/imo-weather-situations.PNG
+---
+scale: 50 %
+align: center
+--- 
+krenging pga konstant vind, bølge og vindkast
+```
+
+## Akseptkriterie 
+
+Kriteriet ser på energibalansen i det fartøyet svinger med vinden. Energien representert i "b" må være større enn energien lagret i "a" på grunn av konstant vind, bølge og vindkast. 
+
+$$ \text{Areal B } \geq \text{ Areal A }$$
+
 
 Krengende arm, $l_{w1}$, for den konstante vinden er gitt som
 
