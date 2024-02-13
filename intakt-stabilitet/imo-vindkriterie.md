@@ -96,7 +96,7 @@ I Maxsurf Stability følger vi samme oppsett som for de generelle kriteriene.
 
 Det som skiller seg her er at vi må gi informasjon om projisert areal og høyde fra kjølen (K) til arealsenteret for vindarealet. 
 
-```{figure} https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/intakt-stabilitet/images/imo-weather-criteria.PNG
+```{figure} https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/intakt-stabilitet/images/maxsurf-stability-weather-criteria-settings.PNG
 ---
 scale: 50 %
 align: center
