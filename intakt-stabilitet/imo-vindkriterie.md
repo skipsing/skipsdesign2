@@ -90,4 +90,16 @@ Først må arealet defineres som en region
 
 Her er vi ute etter areal (Area) og avstand fra arealsenter til vannlinjen (differansen mellom Bounding box Y og Centroid)
 
+## Innstillinger i Maxsurf Stability 
 
+I Maxsurf Stability følger vi samme oppsett som for de generelle kriteriene. 
+
+Det som skiller seg her er at vi må gi informasjon om projisert areal og høyde fra kjølen (K) til arealsenteret for vindarealet. 
+
+```{figure} https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/intakt-stabilitet/images/imo-weather-criteria.PNG
+---
+scale: 50 %
+align: center
+--- 
+Innstillinger og informasjon som må gies i Maxsurf Stability 
+```
