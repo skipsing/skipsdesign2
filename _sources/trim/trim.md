@@ -239,9 +239,6 @@ Det fylles 400[t] frossen fisk i lasterommet med $LCG_{last} = 35[m]$ forenfor A
 
 Basert på hydrostatikktabellen under skal nye dypganger forut og akter beregnes. 
 
-
-
-
  ## Øvinger 
 
  <a href="https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/trim/trim-north-pomor.ipynb" download>Øving trim North Pomor</a>
