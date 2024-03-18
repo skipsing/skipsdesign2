@@ -18,8 +18,20 @@ Gjennom semesteret skal det utvikles og designes et fartøy for transport av var
 
 ## Del 2 (uke 9 - påske)
 
-- Motstandsprediksjon (PYTHON)
-- modellbygging og modellforsøk (LAB)
+I designprosessen av et nytt skip er det viktig å finne ut med rimelig nøyaktighet skrogets slepemotstand. 
+Dette vil bestemme hvor mye installert effekt en vil behøve (motorstørrelse) samt størrelse og geometri på propell. 
+
+En skal her gjennomføre en motstandsberegning basert på kjent empirisk metode. Denne motstandsberegningen skal kontrolleres og sammenlignes med gjennomføring av slepetest i slepetanken. 
+
+Dokumentasjon til mappen skal inneholde: 
+
+- Motstandsprediksjon (Excel/python)
+- modellbygging. Beskrivelse av prosessen, valg av skala, materialer. Supplere med bilder (Latex/word)
+- modellforsøk. Beskrivelse gjennomføring, skalering av hastighet. Databehandling av resultater (LAB/python/excel)
+- diskusjon og refleksjon, Sammenligning av resultater, feilkilder/unøyaktigheter etc. 
+
+En Jupyter notebook med dataanalyse av et slepeforsøk kan du finne her: 
+<a href="https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/skrogmotstand/slepefiler.zip" download>Last ned slepefiler</a>
 
 ## Del 3 
 - Stabilitetshåndbok skadestabilitet (MAXSURF/OFFICE)
