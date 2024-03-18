@@ -1,12 +1,12 @@
 # Langsgående prosjekt 
 
 <p style="text-align:center;">
-    ✍️ Lars Erik Nygård  <a href="mailto:lars.e.nygard@ntnu.no">📧</a> 08.02.2024 📅 
+    ✍️ Lars Erik Nygård  <a href="mailto:lars.e.nygard@ntnu.no">📧</a> 
 </p>
 <p style="text-align:center;">
-🎬 Revidert 18.03.24
+📅08.02.2024    🎬18.03.2024
 </p>
-
+<hr>
 Gjennom semesteret skal det utvikles og designes et fartøy for transport av varer. Det skal utarbeides og leveres følgende dokumentasjon i mappen: 
 
 ## Del 1 (fram til uke 8)
