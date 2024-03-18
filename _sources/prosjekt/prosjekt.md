@@ -1,5 +1,5 @@
 # Langsgående prosjekt 
-
+<hr>
 <p style="text-align:center;">
     ✍️ Lars Erik Nygård  <a href="mailto:lars.e.nygard@ntnu.no">📧</a> 
 </p>
