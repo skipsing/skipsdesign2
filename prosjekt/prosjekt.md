@@ -1,5 +1,12 @@
 # Langsgående prosjekt 
 
+<p style="text-align:center;">
+    ✍️ Lars Erik Nygård  <a href="mailto:lars.e.nygard@ntnu.no">📧</a> 08.02.2024 📅 
+</p>
+<p style="text-align:center;">
+🎬 Revidert 18.03.24
+</p>
+
 Gjennom semesteret skal det utvikles og designes et fartøy for transport av varer. Det skal utarbeides og leveres følgende dokumentasjon i mappen: 
 
 ## Del 1 (fram til uke 8)
@@ -25,13 +32,16 @@ En skal her gjennomføre en motstandsberegning basert på kjent empirisk metode.
 
 Dokumentasjon til mappen skal inneholde: 
 
-- Motstandsprediksjon (Excel/python)
-- modellbygging. Beskrivelse av prosessen, valg av skala, materialer. Supplere med bilder (Latex/word)
-- modellforsøk. Beskrivelse gjennomføring, skalering av hastighet. Databehandling av resultater (LAB/python/excel)
-- diskusjon og refleksjon, Sammenligning av resultater, feilkilder/unøyaktigheter etc. 
+- Motstandsprediksjon (Excel)
+    - Beregne totalmotstanden som sum av alle motstandskomponentene
+    - Plotte og presentere motstandskurven som funksjon av hastighet 
+- Modellbygging. Beskrivelse av prosessen, valg av skala, materialer. Supplere med bilder (Latex/word)
+- Modelltest. Beskrivelse gjennomføring, skalering av hastighet. Databehandling av resultater (LAB/python/excel)
+- Diskusjon og refleksjon, Sammenligne resultantene fra prediksjon og labforsøk, feilkilder/unøyaktigheter etc. 
 
 En Jupyter notebook med dataanalyse av et slepeforsøk kan du finne her: 
 <a href="https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/skrogmotstand/slepefiler.zip" download>Last ned slepefiler</a>
+
 
 ## Del 3 
 - Stabilitetshåndbok skadestabilitet (MAXSURF/OFFICE)
