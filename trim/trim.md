@@ -80,6 +80,7 @@ Måling av trim for fartøy med styrlast gjøres fra *baseline*
 ## Hydrostatiske størrelser for trim 
 For å beregne et fartøys trim skal vi introdusere noen nye begreper og størrelser. Disse blir i all hovedsak generert av dataprogram (f.eks Maxsurf). 
 
+(content:references:mct)=
 ### Enhetstrimmomentet
 
 Enhetstrimmomentet, $MCT$, *(eng. Moment to Change Trim)* er momentet som skal til for at fartøyet skal trimme $1[cm]$. Ofte også benevnt $MCT_{1cm}$ eller $MT1cm$. 
@@ -88,13 +89,14 @@ $$ MCT_{1cm} = \frac{I_F \times \rho}{100 \times L_{pp}}[\frac{tm}{cm}] $$
 
 der $ I_F  $ = Annet arealmoment av vannlinjen om tverrskipsnøytralakse, $LCF$. 
 
-
+(content:references:tpc)=
 ### Tonn pr centimeter neddykking
 
 Økt deplasement per cm neddykking, ofte referert til som *Tonnes per centimetre*, $TPC$ eller $TP_{1cm}$, og er definert som:  
 
 $$ TP_{1cm} = \frac{A_{WL} \times \rho_{sea}}{1cm}[\frac{t}{cm}] $$
 
+(content:references:lcf)=
 ### Langskips flotasjonsenter 
 
 Dette er ofte referert til som et punkt, men i teorien er det langskipsposisjon til en tverrskipsakse gjennom arealsenteret til vannlinjen, $A_{WL}$. 

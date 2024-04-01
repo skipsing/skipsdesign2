@@ -1,23 +1,4 @@
----
-title: Using MyST Frontmatter
-subtitle: In JupyterLab
-license: CC-BY-4.0
-github: https://github.com/executablebooks/mystmd
-subject: Tutorial
-venue: MyST Markdown
-biblio:
-  volume: '1'
-  issue: '42'
-authors:
-  - name: Rowan Cockett
-    email: rowan@curvenote.com
-    corresponding: true
-    orcid: 0000-0002-7859-8394
-    affiliations:
-      - Curvenote
-      - ExecutableBooks
-date: 2023/07/05
----
+
 
 # Stabilitet ved skade 
 ## Prosedyre for å beregne stabilitet etter skade 
@@ -55,3 +36,23 @@ I dette emnet setter vi følgende kriterier for skadet tilstand
 
 - $GM_{T_{skade}} > 0.1m $ 
 - Trim og/eller krengevinkel m
+
+## Tapt oppdrifts metoden 
+
+Ved tapt oppdriftsmetode er $\delta$ uendret. Fartøyet får dermed en ny dypgang $T_s$ etter skade.
+
+__Prosedyre__
+
+1. Beregn ny dypgang i skadet tilstand $T_s$ ved å sette $\delta_{intakt} = \delta_{skadet}$ 
+2. Beregn fartøyets trim som følge av skade. parallel neddykking $\delta T=\frac{W}{TP_{1cm}} $ (eller les ut av hydrostatikktabell).
+3. Flytt vekten til endelig posisjon og beregn trimmende moment $ M_T = W \times h $.
+4. Bestem enhetstrimmomentet $ MCT_{1cm} = \frac{I_F \times \rho}{100 \times L_{pp}}[\frac{tm}{cm}] $. (eller les ut av hydrostatikktabell).
+5. Beregn total trim $ t = \frac{M_T}{MCT_{1cm}}$. 
+6. Fordel trim forut og akter:
+ - $ t_a = LCF \times \frac{t}{L_{pp}} $
+ - $ t_f = (L_{pp} - LCF ) \times \frac{t}{L_{pp}} $
+7. Beregn nye dypganger forut og akter:
+ - $ T_A = T_0 + \delta T \pm t_a $
+ - $ T_F = T_0 + \delta T \pm t_f $
+
+
