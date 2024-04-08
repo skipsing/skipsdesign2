@@ -16,6 +16,7 @@ chapters:
 - file: skade-stabilitet/skadestabilitetskriterie
 - file: prosjekt/prosjekt
   sections:
+  - file: prosjekt/ukeplan/uke15
   - file: prosjekt/ukeplan/uke7
   - file: prosjekt/ukeplan/uke5
   - file: prosjekt/ukeplan/uke4
