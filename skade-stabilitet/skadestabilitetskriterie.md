@@ -1,4 +1,4 @@
-# skadestabilitetscenario og akseptkriterie i prosjektmappe 
+# skadestabilitet
 
 <p style="text-align:center;">
     ✍️ Lars Erik Nygård  <a href="mailto:lars.e.nygard@ntnu.no">📧</a> 
@@ -9,7 +9,7 @@
 </p>
 <hr>
 
-## Skadescenarioer
+## Skadescenario
 Det finnes mange ulike skadescenarioer og dertil akseptkriterier en vil kunne møte på som skipsingeniør. Overordnede IMO/Solas og Marpolkrav er ofte gjengangere. I prosjektmappen skal vi fokusere på følgende skadescenario: 
 
 - Skaden skal kunne inntreffe på et vilkårlig punkt under *designvannlinjen*. 
