@@ -13,6 +13,7 @@ chapters:
   - file: intakt-stabilitet/stabilitetssjekk
   - file: intakt-stabilitet/stabilitetskriterier
   - file: intakt-stabilitet/imo-vindkriterie
+- file: skade-stabilitet/skadestabilitetskriterie
 - file: prosjekt/prosjekt
   sections:
   - file: prosjekt/ukeplan/uke7

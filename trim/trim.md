@@ -96,7 +96,7 @@ der $ I_F  $ = Annet arealmoment av vannlinjen om tverrskipsnøytralakse, $LCF$.
 
 $$ TP_{1cm} = \frac{A_{WL} \times \rho_{sea}}{1cm}[\frac{t}{cm}] $$
 
-(content:references:lcf)=
+(content:references:lcf)=()
 ### Langskips flotasjonsenter 
 
 Dette er ofte referert til som et punkt, men i teorien er det langskipsposisjon til en tverrskipsakse gjennom arealsenteret til vannlinjen, $A_{WL}$. 

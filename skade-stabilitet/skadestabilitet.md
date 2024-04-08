@@ -34,8 +34,8 @@ I sære tilfeller overfyller man et eller flere av fartøyets oppdriftsgivende v
 
 I dette emnet setter vi følgende kriterier for skadet tilstand
 
-- $GM_{T_{skade}} > 0.1m $ 
-- Trim og/eller krengevinkel m
+- $GM_{T_{skade}} > 0m $ 
+- Dekkshjørnet skal ikke være neddykket i skadet likevektstilstand 
 
 ## Tapt oppdrifts metoden 
 
