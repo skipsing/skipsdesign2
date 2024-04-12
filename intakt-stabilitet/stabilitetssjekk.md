@@ -8,19 +8,15 @@
 -----
 
 
-I denne økten skal vi anvende Python og Jupyter Notebook til å databehandle og kontrollere om skipet tilfredstiller IMO's krav til stabilitet.
+I denne økten skal vi anvende Python og Jupyter Notebook til å databehandle og kontrollere om skipet tilfredsstiller IMO's krav til stabilitet.
 
 
 ```{figure} https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/intakt-stabilitet/images/gz-kurve-variasjon.PNG
 ---
-scale: 50 %
 align: center
 --- 
 GZ-kurven er sterkt avhengig av skipets form og tyngdepunktsplassering vertikalt. Bildet hentet fra {cite}`havromsteknologi`. 
 ```
-
-test {cite}`havromsteknologi`
-test {cite}`shiphydrostatics`
 
 ## Stabilitetsanalyse i Maxsurf Stability 
 
@@ -76,9 +72,7 @@ I dialogboksen så gir vi filen et navn og lagrer den på et egnet sted (på hje
 
 ## Analyse av data i Jupyter Notebook 
 
-Jupyter Notebooken lastes ned herfra: 
-
-<a href="http://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/intakt-stabilitet/images/stab_analyse.zip" download>📥 Download</a> 
+{download}`Last ned jupyter notebook for analysering av GZ-dataene <http://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/intakt-stabilitet/images/stab_analyse.zip>`
 
 Dette er en .zip fil som inneholder:
 - jupyter notebooken
@@ -88,7 +82,7 @@ Dette er en .zip fil som inneholder:
 ```{admonition} Filplassering
 :class: caution
 
-Filen med dataene må ligge i samme mappe som jupyter notebooken for at den skal kunne leses! 
+Filen med dataene må ligge i samme mappe som jupyter notebooken for at den skal kunne leses! Alternativt må dere endre stien 
 ```
 ## Referanser
 
@@ -96,4 +90,7 @@ Filen med dataene må ligge i samme mappe som jupyter notebooken for at den skal
 :filter: docname in docnames
 ```
 
+## Sluttnote 
+
+test
 
