@@ -37,4 +37,4 @@ parse:
 sphinx:
   config:
     bibtex_reference_style: super
-    bibtex_bibfiles: "references.bib"
+    bibtex_bibfiles: references.bib
