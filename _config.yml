@@ -33,8 +33,3 @@ html:
 
 parse:
    myst_url_schemes: [mailto, http, https]
-
-sphinx:
-  config:
-    bibtex_reference_style: author_year
-    bibtex_bibfiles: references.bib

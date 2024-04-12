@@ -93,6 +93,7 @@ Filen med dataene må ligge i samme mappe som jupyter notebooken for at den skal
 ## Referanser
 
 ```{bibliography}
+:filter: docname in docnames
 ```
 
 
