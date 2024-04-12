@@ -8,7 +8,7 @@
 -----
 
 
-I denne økten skal vi anvende Python og Jupyter Notebook til å databehandle og kontrollere om skipet tilfredstilller IMO's krav til stabilitet.
+I denne økten skal vi anvende Python og Jupyter Notebook til å databehandle og kontrollere om skipet tilfredstiller IMO's krav til stabilitet.
 
 
 ```{figure} https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/intakt-stabilitet/images/gz-kurve-variasjon.PNG
@@ -16,9 +16,11 @@ I denne økten skal vi anvende Python og Jupyter Notebook til å databehandle og
 scale: 50 %
 align: center
 --- 
-GZ-kurven er sterkt avhengig av skipets form og tyngdepunktsplassering vertikalt. Bildet hentet fra {cite}`havromsteknologi`
+GZ-kurven er sterkt avhengig av skipets form og tyngdepunktsplassering vertikalt. Bildet hentet fra {cite}`havromsteknologi`. 
 ```
 
+test {cite}`havromsteknologi`
+test {cite}`shiphydrostatics`
 
 ## Stabilitetsanalyse i Maxsurf Stability 
 
