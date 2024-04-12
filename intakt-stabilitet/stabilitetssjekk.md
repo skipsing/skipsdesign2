@@ -92,7 +92,8 @@ Filen med dataene må ligge i samme mappe som jupyter notebooken for at den skal
 ```
 
 
-
+```{bibliography}
+```
 
 
 
