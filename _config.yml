@@ -33,3 +33,9 @@ html:
 
 parse:
    myst_url_schemes: [mailto, http, https]
+
+   # In _config.yml
+sphinx:
+  config:
+    bibtex_reference_style: author_year
+    bibtex_bibfiles: "your_reference_file.bib"

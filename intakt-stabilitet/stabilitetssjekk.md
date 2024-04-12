@@ -90,11 +90,10 @@ Dette er en .zip fil som inneholder:
 
 Filen med dataene må ligge i samme mappe som jupyter notebooken for at den skal kunne leses! 
 ```
-
+## Referanser
 
 ```{bibliography}
+:filter: docname in docnames
 ```
-
-
 
 
