@@ -16,7 +16,7 @@ I denne økten skal vi anvende Python og Jupyter Notebook til å databehandle og
 scale: 50 %
 align: center
 --- 
-GZ-kurven er sterkt avhengig av skipets form og tyngdepunktsplassering vertikalt
+GZ-kurven er sterkt avhengig av skipets form og tyngdepunktsplassering vertikalt. Bildet hentet fra {cite}`havromsteknologi`
 ```
 
 

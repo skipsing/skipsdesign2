@@ -30,7 +30,7 @@ parts:
     chapters:    
     - file: skade-stabilitet/skadestabilitetskriterie
   - caption: Langsgående prosjekt
-    numbered: True  # Only applies to chapters in Part 1.
+    numbered: False  # Only applies to chapters in Part 1.
     chapters:    
     - file: prosjekt/prosjekt
     - file: prosjekt/ukeplan/uke15
