@@ -6,7 +6,7 @@ push book to pg pages
 ghp-import -n -p -f _build/html
 
 Download role: 
-{download}`Last ned øvingsoppgaver der du trener på vekts- og tyngdepunktsberegninger i jupyter notebook <https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/lastekondisjoner/tyngdepunkt.ipynb">`
+{download}`Last ned øvingsoppgaver der du trener på vekts- og tyngdepunktsberegninger i jupyter notebook <https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/lastekondisjoner/tyngdepunkt.ipynb>`
 
 Signatur for bruk
 

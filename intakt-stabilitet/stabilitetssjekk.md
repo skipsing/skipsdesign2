@@ -30,7 +30,6 @@ Etter at vi har lastet inn prosjektet vårt i Maxsurf Stability Advanced velger 
 
 ```{figure} https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/intakt-stabilitet/images/maxsurf-stability-range-step.PNG
 ---
-scale: 50 %
 align: center
 --- 
 Justering av range som Maxsurf skal krenge båten fra 0-90 grader, og med kalkulasjon for hver 1 grad krenging
@@ -41,7 +40,6 @@ Videre må vi spesifieres hva som skal logges av data:
 
 ```{figure} https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/intakt-stabilitet/images/maxsurf-stability-data.PNG
 ---
-scale: 50 %
 align: center
 --- 
 Data som skal logges er GZ verdi og presentasjonen skal være horisontal
@@ -55,7 +53,6 @@ så velger vi hvilken lastekondisjon vi skal analysere, og videre *intact*kondis
 
 ```{figure} https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/intakt-stabilitet/images/maxsurf-stability-large-angle-stability-setting.PNG
 ---
-scale: 50 %
 align: center
 --- 
 Analysemodus *Large angle stability* med valgt lastkondisjon (du kan ha gitt denne et annet navn) og lastetilstand skal stå på *intact*
