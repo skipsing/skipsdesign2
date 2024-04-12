@@ -121,7 +121,7 @@ Vi har at et fartøys *initalstabilitet* er gitt ved $ GM_0 = KM-KG $. Plasserin
 
 ## Øving i Jupyter Notebook 
 
-{download}`Last ned jupyter notebook <https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/lastekondisjoner/tyngdepunkt.ipynb" download>`
+{download}`Last ned øvingsoppgaver som omhandler vekt og tyngdepunkt i jupyter notebook <https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/lastekondisjoner/tyngdepunkt.ipynb">`
  
 
 ### Krengeprøve
