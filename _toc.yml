@@ -6,27 +6,27 @@ root: intro
 
 parts: 
   - caption: Emneplan og emneinfo
-    numbered: True  # Only applies to chapters in Part 1.
+    numbered: False  # Only applies to chapters in Part 1.
     chapters:
     - file: emneinfo
     - file: emneplan
   - caption: Fartøyvekt og lastekondisjoner
-    numbered: True 
+    numbered: False 
     chapters:
     - file: lastekondisjoner/lastekondisjoner 
   - caption: Trim og langskipstabilitet
-    numbered: True 
+    numbered: False 
     chapters:
     - file: trim/trim
   - caption: Intakt stabilitet
-    numbered: True  # Only applies to chapters in Part 1.
+    numbered: False  # Only applies to chapters in Part 1.
     chapters:
     - file: intakt-stabilitet/intakt-stabilitet
     - file: intakt-stabilitet/stabilitetssjekk
     - file: intakt-stabilitet/stabilitetskriterier
     - file: intakt-stabilitet/imo-vindkriterie
   - caption: Skadestabilitet
-    numbered: True  # Only applies to chapters in Part 1.
+    numbered: False  # Only applies to chapters in Part 1.
     chapters:    
     - file: skade-stabilitet/skadestabilitetskriterie
   - caption: Langsgående prosjekt
