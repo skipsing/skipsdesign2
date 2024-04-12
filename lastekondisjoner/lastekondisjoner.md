@@ -27,7 +27,7 @@ $$
 Lettskipsvekten $ W_{lettskip} $ består av vekten til *tomt* skip; på komponentform vekten av skrog, utrustning og maskineri. 
 
 ## Dødvekten
-Dødvekten består av to bidrag; vekt av skipets egne forbruksvarer (*eng:consumables*) og vekt av personer og last (*eng:[Payload](#payload)*)  
+Dødvekten består av to bidrag; vekt av skipets egne forbruksvarer (*eng:consumables*) og vekt av personer og last (*eng:Payload*)  
 
 For et handelsfartøy vil vekten av lasten være det største bidraget av dødvekten. Eksempler på last kan være: 
 - Olje for et tankskip

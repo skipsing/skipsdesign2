@@ -3,10 +3,9 @@
 
 format: jb-book
 root: intro
-
 parts: 
   - caption: Emneplan og emneinfo
-    numbered: False  # Only applies to chapters in Part 1.
+    numbered: True  # Only applies to chapters in Part 1.
     chapters:
     - file: emneinfo
     - file: emneplan
