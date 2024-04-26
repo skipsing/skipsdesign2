@@ -27,7 +27,7 @@ $$
 Lettskipsvekten $ W_{lettskip} $ består av vekten til *tomt* skip; på komponentform vekten av skrog, utrustning og maskineri. 
 
 ## Dødvekten
-Dødvekten består av to bidrag; vekt av skipets egne forbruksvarer (*eng:consumables*) og vekt av personer og last (*eng:[Payload](#payload)*)  
+Dødvekten består av to bidrag; vekt av skipets egne forbruksvarer (*eng:consumables*) og vekt av personer og last (*eng:Payload*)  
 
 For et handelsfartøy vil vekten av lasten være det største bidraget av dødvekten. Eksempler på last kan være: 
 - Olje for et tankskip
@@ -54,7 +54,7 @@ Disse vil variere iløpet av en seilas, og kapasiteten er blant annet avhengig a
 :class: note 
 :name: eksempelberegning-vektdeplasement
 
-Tørrlastskipet *M/S Freighter* ligger til kai og laster ombord $500[t]$ med last. Samtidig blir det bunkret $150[tonn]$ ferskvann. Lettskipvekten er oppgitt til å være $1250[t]$. Beregn skipets vektdeplasement når den er ferdig lastet. 
+Tørrlastskipet *M/S Freighter* ligger til kai og laster ombord $500[t]$ med last. Samtidig blir det bunkret $150[t]$ ferskvann. Lettskipvekten er oppgitt til å være $1250[t]$. Beregn skipets vektdeplasement når den er ferdig lastet. 
 
 Vi har at $ \Delta = W_{lettskip} + W_{dødvekt}  $, og innsatt får vi:
 
@@ -63,7 +63,7 @@ $$
 $$
 
 $$ 
-\Delta = 1250[t] \times 150[t] \times  500[tonn] 
+\Delta = 1250[t] \times 150[t] \times  500[t] 
 $$
 
 $$ 
@@ -75,9 +75,9 @@ $$
 ## Tyngdepunkt
 Alle vekter som tilsammen utgjør *lettskipet* og *dødvekten* har sine spesifikke tyngdepunkter utrykt i skipets eget referansesystem: 
 
-- Vertikalt, $Vcg$ -*vertical centre of gravity*
-- Langskips, $Lcg$ -*longitudinal centre of gravity*
-- Tverrskips, $Tcg$ -*transverse centre of gravity*
+- Vertikalt, $VCG$ -*Vertical Centre of Gravity*
+- Langskips, $LCG$ -*Longitudinal Centre of Gravity*
+- Tverrskips, $TCG$ -*Transverse Centre of Gravity*
 
 ```{admonition} Eksempelberegning samlet tyngdepunkt 
 :class: note 
@@ -98,7 +98,7 @@ Her kan det være hensiktsmessig å lage en oppstilling i et regneark der samlet
 | Lettskip  | 1250     | 55      | 68750       |
 | Last      | 500      | 70      | 35000       |
 | Ferskvann | 150      | 12      | 1800        |
-| ∑         | 1900     | ???     | 105550      |
+| ∑ sum     | 1900     | ???     | 105550      |
 
 $$ 
 LCG_{lastkondisjon} = \frac{Moment}{Vekt} 
@@ -121,7 +121,7 @@ Vi har at et fartøys *initalstabilitet* er gitt ved $ GM_0 = KM-KG $. Plasserin
 
 ## Øving i Jupyter Notebook 
 
-<a href="https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/lastekondisjoner/tyngdepunkt.ipynb" download>Link til øving</a>
+{download}`Last ned øvingsoppgaver som omhandler vekt og tyngdepunkt i jupyter notebook <https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/lastekondisjoner/tyngdepunkt.ipynb">`
  
 
 ### Krengeprøve

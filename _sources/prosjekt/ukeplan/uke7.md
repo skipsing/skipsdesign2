@@ -13,7 +13,6 @@
 
 ```{figure} https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/prosjekt/images/eksportere-skrog-maxsurf-fresing.PNG
 ---
-scale: 50 %
 align: center
 --- 
 Innstillinger i Maxsurf Modeller > File > Export for eksport av skrog til fresing 

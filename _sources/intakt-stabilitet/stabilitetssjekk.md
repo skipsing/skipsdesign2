@@ -8,17 +8,15 @@
 -----
 
 
-I denne økten skal vi anvende Python og Jupyter Notebook til å databehandle og kontrollere om skipet tilfredstilller IMO's krav til stabilitet.
+I denne økten skal vi anvende Python og Jupyter Notebook til å databehandle og kontrollere om skipet tilfredsstiller IMO's krav til stabilitet.
 
 
 ```{figure} https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/intakt-stabilitet/images/gz-kurve-variasjon.PNG
 ---
-scale: 50 %
 align: center
 --- 
-GZ-kurven er sterkt avhengig av skipets form og tyngdepunktsplassering vertikalt
+GZ-kurven er sterkt avhengig av skipets form og tyngdepunktsplassering vertikalt. Bildet hentet fra {cite}`havromsteknologi`. 
 ```
-
 
 ## Stabilitetsanalyse i Maxsurf Stability 
 
@@ -32,7 +30,6 @@ Etter at vi har lastet inn prosjektet vårt i Maxsurf Stability Advanced velger 
 
 ```{figure} https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/intakt-stabilitet/images/maxsurf-stability-range-step.PNG
 ---
-scale: 50 %
 align: center
 --- 
 Justering av range som Maxsurf skal krenge båten fra 0-90 grader, og med kalkulasjon for hver 1 grad krenging
@@ -43,7 +40,6 @@ Videre må vi spesifieres hva som skal logges av data:
 
 ```{figure} https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/intakt-stabilitet/images/maxsurf-stability-data.PNG
 ---
-scale: 50 %
 align: center
 --- 
 Data som skal logges er GZ verdi og presentasjonen skal være horisontal
@@ -57,7 +53,6 @@ så velger vi hvilken lastekondisjon vi skal analysere, og videre *intact*kondis
 
 ```{figure} https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/intakt-stabilitet/images/maxsurf-stability-large-angle-stability-setting.PNG
 ---
-scale: 50 %
 align: center
 --- 
 Analysemodus *Large angle stability* med valgt lastkondisjon (du kan ha gitt denne et annet navn) og lastetilstand skal stå på *intact*
@@ -74,9 +69,7 @@ I dialogboksen så gir vi filen et navn og lagrer den på et egnet sted (på hje
 
 ## Analyse av data i Jupyter Notebook 
 
-Jupyter Notebooken lastes ned herfra: 
-
-<a href="http://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/intakt-stabilitet/images/stab_analyse.zip" download>📥 Download</a> 
+{download}`Last ned jupyter notebook for analysering av GZ-dataene <http://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/intakt-stabilitet/images/stab_analyse.zip>`
 
 Dette er en .zip fil som inneholder:
 - jupyter notebooken
@@ -86,12 +79,12 @@ Dette er en .zip fil som inneholder:
 ```{admonition} Filplassering
 :class: caution
 
-Filen med dataene må ligge i samme mappe som jupyter notebooken for at den skal kunne leses! 
+Filen med dataene må ligge i samme mappe som jupyter notebooken for at den skal kunne leses! Alternativt må dere endre stien 
 ```
+## Referanser
 
-
-
-
+```{bibliography}
+```
 
 
 

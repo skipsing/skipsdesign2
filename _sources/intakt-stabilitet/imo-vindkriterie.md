@@ -21,7 +21,6 @@ I tillegg til de generelle kravene som vi så på tidligere har IMO også et *vi
 
 ```{figure} https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/intakt-stabilitet/images/IMO-severe-wind-curve.PNG
 ---
-scale: 50 %
 align: center
 --- 
 IMO vindkriterie
@@ -37,7 +36,6 @@ Kriteriet ser på 3 effekter som inntreffer samtidig.
 
 ```{figure} https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/intakt-stabilitet/images/imo-weather-situations.PNG
 ---
-scale: 50 %
 align: center
 --- 
 krenging pga konstant vind, bølge og vindkast
@@ -98,7 +96,6 @@ Det som skiller seg her er at vi må gi informasjon om projisert areal og høyde
 
 ```{figure} https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/intakt-stabilitet/images/maxsurf-stability-weather-criteria-settings.PNG
 ---
-scale: 50 %
 align: center
 --- 
 Innstillinger og informasjon som må gies i Maxsurf Stability 

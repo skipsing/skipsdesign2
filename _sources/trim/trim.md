@@ -7,8 +7,9 @@ Vi sier da at fartøyet flyter på *even keel*.
 I situasjoner der de hydrostatiske størrelsene $LCG$ og $LCB$ ikke er i samme punkt ved *even keel* vil fartøyet søke likevekt der disse er ovenfor hverandre. Tyngdepunktet er som regel *fast og stasjonært* så det vil være oppdriftsenteret som flytter på seg.
 
 ```{figure} https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/trim/images/fartøy-søker-likevekt-ved-trim.PNG
-:scale: 50 %
-
+---
+align: center
+--- 
 Ved langskips ubalanse mellom $LCG$ og $LCB$ vil et fartøy trimme til $LCB$ er overrett med $LCG$
 ```
 
@@ -18,8 +19,9 @@ Fartøyet vil da rotere om en tverrskips akse, flotasjonsaksen. Vi sier fartøye
 ## Betegnelser for trim 
 
 ```{figure} https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/trim/images/betegnelser-trim.PNG
-:scale: 50 %
-
+---
+align: center
+--- 
 Dypgang akter $T_A$ og dypgang forut $T_F$
 ```
 
@@ -31,8 +33,9 @@ Dypgang akter $T_A$ og dypgang forut $T_F$
 Avlesning av dypgang kan gjøres visuelt ved hjelp av påmalte/sveiste *fotmerker*. 
 
 ```{figure} https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/trim/images/fotmerker-trim.PNG
-:scale: 50 %
- 
+---
+align: center
+--- 
 Her ser vi to eksempler midtskips til venstre og i baugen til høyre. 
 
 ```
@@ -72,14 +75,16 @@ Definisjonen av trim måles fra *baseline*, (ikke fra kjølinjen).
 Fartøy med styrlast vil derfor *stikke dypere* akter enn forut ved null trim. 
 
 ```{figure} https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/trim/images/styrlast-trim.PNG
-:scale: 50 %
- 
+---
+align: center
+--- 
 Måling av trim for fartøy med styrlast gjøres fra *baseline*
 ```
 
 ## Hydrostatiske størrelser for trim 
 For å beregne et fartøys trim skal vi introdusere noen nye begreper og størrelser. Disse blir i all hovedsak generert av dataprogram (f.eks Maxsurf). 
 
+(content:references:mct)=
 ### Enhetstrimmomentet
 
 Enhetstrimmomentet, $MCT$, *(eng. Moment to Change Trim)* er momentet som skal til for at fartøyet skal trimme $1[cm]$. Ofte også benevnt $MCT_{1cm}$ eller $MT1cm$. 
@@ -88,21 +93,23 @@ $$ MCT_{1cm} = \frac{I_F \times \rho}{100 \times L_{pp}}[\frac{tm}{cm}] $$
 
 der $ I_F  $ = Annet arealmoment av vannlinjen om tverrskipsnøytralakse, $LCF$. 
 
-
+(content:references:tpc)=
 ### Tonn pr centimeter neddykking
 
 Økt deplasement per cm neddykking, ofte referert til som *Tonnes per centimetre*, $TPC$ eller $TP_{1cm}$, og er definert som:  
 
 $$ TP_{1cm} = \frac{A_{WL} \times \rho_{sea}}{1cm}[\frac{t}{cm}] $$
 
+(content:references:lcf)=()
 ### Langskips flotasjonsenter 
 
 Dette er ofte referert til som et punkt, men i teorien er det langskipsposisjon til en tverrskipsakse gjennom arealsenteret til vannlinjen, $A_{WL}$. 
 Fartøyet vil trimme (rotere) om dette punktet. I figur under kan en se at for vanlige skrogformer vil LCF vanligvis ligge noe bak nullkryss, mens for en boksformet lekter vil det være i samme punkt. 
 
 ```{figure} https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/trim/images/lcf-lekter-skip.PNG
-:scale: 50 %
- 
+---
+align: center
+--- 
 LCF's plassering i forhold til midtskip/nullkryss for ulike skrogformer
 ```
 
@@ -168,8 +175,9 @@ Det vil si at vi må laste på lekteren $24.6[t]$ for å få en dypgangsendring 
 Under er det vist et eksempel på en hydrostatisk tabell for tråleren M/S Havbryn. 
 
 ```{figure} https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/trim/images/hydrostatisk-tabell-havbryn.PNG
-:scale: 50 %
- 
+---
+align: center
+--- 
 Hydrostatikktabell M/S Havbryn 
 ```
 
@@ -181,8 +189,9 @@ Som vi husker fra tverrskipstabilitet der krenging ved store vinkler føre til a
 Små vekter er vekter som er så små at de ikke endrer de hydrostatiske verdiene signifikant ved lasting/lossing av vekten. (Tommelfingerregel er maks 10 % av deplasementet, men det kommer også an lengden på armen)
 
 ```{figure} https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/trim/images/trim-små-vekter.PNG
-:scale: 50 %
- 
+---
+align: center
+--- 
 Trimmomentet blir beregnet ut fra vektens posisjon fra LCF 
 ```
 
@@ -206,8 +215,9 @@ __Prosedyre__
 Store vekter er vekter som er så store at vil endre de hydrostatiske verdiene i vesentlig grad. (Tommelfingerregel her er fra 10 % av deplasementet og utover, men det kommer også an lengden på armen)
 
 ```{figure} https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/trim/images/trim-store-vekter.PNG
-:scale: 50 %
- 
+---
+align: center
+--- 
 Trimmomentet blir beregnet ut fra avstanden mellom *LCB* og *LCG* for fartøyet etter lasting. 
 
 ```

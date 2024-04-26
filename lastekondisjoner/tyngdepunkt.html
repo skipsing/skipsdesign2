@@ -156,16 +156,40 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../emneinfo.html">Emneinfo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../emneplan.html">Emneplan</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lastekondisjoner.html">Lastekondisjoner</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../prosjekt/prosjekt.html">Langsgående prosjekt</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../prosjekt/ukeplan/uke3.html">Uke 3 Vektestimering, hoveddimensjoner og general arrangement</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../prosjekt/alufrakt.html">Design av fraktebåt for transport av rå-aluminium</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../prosjekt/containerfrakt.html">Design av fraktebåt for transport av Stressless lenestoler</a></li>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Emneplan og emneinfo</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../emneinfo.html">1. Emneinfo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../emneplan.html">2. Emneplan</a></li>
 </ul>
-</li>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Fartøyvekt og lastekondisjoner</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="lastekondisjoner.html">Lastekondisjoner</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Trim og langskipstabilitet</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../trim/trim.html">Trim</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Intakt stabilitet</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../intakt-stabilitet/intakt-stabilitet.html">Intakt stabilitet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intakt-stabilitet/stabilitetssjekk.html">Sjekk av IMO stabilitetskriterier</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intakt-stabilitet/stabilitetskriterier.html">Analyse av GZ-kurve i Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intakt-stabilitet/imo-vindkriterie.html">IMO vindkriterie</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Skadestabilitet</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../skade-stabilitet/skadestabilitetskriterie.html">skadestabilitet</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Langsgående prosjekt</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../prosjekt/prosjekt.html">Langsgående prosjekt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../prosjekt/ukeplan/uke15.html">Uke 15 Skadestabilitet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../prosjekt/ukeplan/uke7.html">Uke 7 Analyse av GZ kurven opp mot IMO krav</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../prosjekt/ukeplan/uke5.html">Uke 5 IMO intaktstabilitet og Maxsurf</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../prosjekt/ukeplan/uke4.html">Uke 4 Beregning av trim og siste finish på skroget i prosjektet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../prosjekt/ukeplan/uke3.html">Uke 3 Vektestimering, hoveddimensjoner og general arrangement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../prosjekt/alufrakt.html">Design av fraktebåt for transport av rå-aluminium</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../prosjekt/containerfrakt.html">Design av fraktebåt for transport av Stressless lenestoler</a></li>
 </ul>
 
     </div>
@@ -396,13 +420,13 @@ document.write(`
 <p>Et skip med deplasement <span class="math notranslate nohighlight">\(18350t\)</span> har tyngdepunkt <span class="math notranslate nohighlight">\(96.3m\)</span> fra <span class="math notranslate nohighlight">\(Ap\)</span>.</p>
 <p>Det lastes deretter følgende laster:</p>
 <ul class="simple">
-<li><p><span class="math notranslate nohighlight">\(600t\)</span> med <em>Lcg</em> <span class="math notranslate nohighlight">\(61.3m\)</span> fra <span class="math notranslate nohighlight">\(Ap\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(800t\)</span> med <em>Lcg</em> <span class="math notranslate nohighlight">\(122.2m\)</span> fra <span class="math notranslate nohighlight">\(Ap\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(400t\)</span> med <em>Lcg</em> <span class="math notranslate nohighlight">\(146.4m\)</span> fra <span class="math notranslate nohighlight">\(Ap\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(475t\)</span> med <em>Lcg</em> <span class="math notranslate nohighlight">\(184.1m\)</span> fra <span class="math notranslate nohighlight">\(Ap\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(600t\)</span> med <em>LCG</em> <span class="math notranslate nohighlight">\(61.3m\)</span> fra <span class="math notranslate nohighlight">\(Ap\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(800t\)</span> med <em>LCG</em> <span class="math notranslate nohighlight">\(122.2m\)</span> fra <span class="math notranslate nohighlight">\(Ap\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(400t\)</span> med <em>LCG</em> <span class="math notranslate nohighlight">\(146.4m\)</span> fra <span class="math notranslate nohighlight">\(Ap\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(475t\)</span> med <em>LCG</em> <span class="math notranslate nohighlight">\(184.1m\)</span> fra <span class="math notranslate nohighlight">\(Ap\)</span></p></li>
 </ul>
 <p><img alt="fig.2" src="https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/lastekondisjoner/images/ovning-tyngdepunkt-2.png" /></p>
-<p>Beregn nytt <span class="math notranslate nohighlight">\(\Delta\)</span> og langskipstyngdepunkt <span class="math notranslate nohighlight">\(Lcg\)</span> målt fra aktre perpendikulær.</p>
+<p>Beregn nytt <span class="math notranslate nohighlight">\(\Delta\)</span> og samlet langskipstyngdepunkt <span class="math notranslate nohighlight">\(LCG\)</span> målt fra aktre perpendikulær.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># skriv din kode her</span>
@@ -410,20 +434,20 @@ document.write(`
 </div>
 </div>
 </div>
-<p>Fasit: <span class="math notranslate nohighlight">\(Lcg = 99.28m\)</span> og <span class="math notranslate nohighlight">\(\Delta = 20625t\)</span>.</p>
+<p>Fasit: <span class="math notranslate nohighlight">\(LCG = 99.28m\)</span> og <span class="math notranslate nohighlight">\(\Delta = 20625t\)</span>.</p>
 </section>
 <section id="oppgave-3">
 <h2>Oppgave 3<a class="headerlink" href="#oppgave-3" title="Permalink to this heading">#</a></h2>
 <p>Et skip under bygging har estimert følgende vekter på byggeblokkene med tilhørende tyngdepunkter:</p>
 <ul class="simple">
-<li><p>forskip <span class="math notranslate nohighlight">\(210t\)</span> med <span class="math notranslate nohighlight">\(Lcg=102m\)</span> fra Ap og <span class="math notranslate nohighlight">\(Vcg=6m\)</span> fra baseline</p></li>
-<li><p>midtskip <span class="math notranslate nohighlight">\(1530t\)</span> med <span class="math notranslate nohighlight">\(Lcg=62m\)</span> fra Ap og <span class="math notranslate nohighlight">\(Vcg=5.5m\)</span> fra baseline</p></li>
-<li><p>akterskip <span class="math notranslate nohighlight">\(340t\)</span> med <span class="math notranslate nohighlight">\(Lcg=13m\)</span> fra Ap og <span class="math notranslate nohighlight">\(Vcg=5.7m\)</span> fra baseline</p></li>
-<li><p>overbygg <span class="math notranslate nohighlight">\(390t\)</span> med <span class="math notranslate nohighlight">\(Lcg=16m\)</span> fra Ap og <span class="math notranslate nohighlight">\(Vcg=12.2m\)</span> fra baseline</p></li>
-<li><p>bro <span class="math notranslate nohighlight">\(112t\)</span> med <span class="math notranslate nohighlight">\(Lcg=17.2m\)</span> fra Ap og <span class="math notranslate nohighlight">\(Vcg=16.4m\)</span> fra baseline</p></li>
+<li><p>forskip <span class="math notranslate nohighlight">\(210t\)</span> med <span class="math notranslate nohighlight">\(LCG=102m\)</span> fra Ap og <span class="math notranslate nohighlight">\(VCG=6m\)</span> fra baseline</p></li>
+<li><p>midtskip <span class="math notranslate nohighlight">\(1530t\)</span> med <span class="math notranslate nohighlight">\(LCG=62m\)</span> fra Ap og <span class="math notranslate nohighlight">\(VCG=5.5m\)</span> fra baseline</p></li>
+<li><p>akterskip <span class="math notranslate nohighlight">\(340t\)</span> med <span class="math notranslate nohighlight">\(LCG=13m\)</span> fra Ap og <span class="math notranslate nohighlight">\(VCG=5.7m\)</span> fra baseline</p></li>
+<li><p>overbygg <span class="math notranslate nohighlight">\(390t\)</span> med <span class="math notranslate nohighlight">\(LCG=16m\)</span> fra Ap og <span class="math notranslate nohighlight">\(VCG=12.2m\)</span> fra baseline</p></li>
+<li><p>bro <span class="math notranslate nohighlight">\(112t\)</span> med <span class="math notranslate nohighlight">\(LCG=17.2m\)</span> fra Ap og <span class="math notranslate nohighlight">\(VCG=16.4m\)</span> fra baseline</p></li>
 </ul>
 <p><img alt="fig.3" src="https://cdn.jsdelivr.net/gh/skipsing/skipsdesign2/lastekondisjoner/images/ovning-tyngdepunkt-3.png" /></p>
-<p>Beregn lettskipsdeplasementet, <span class="math notranslate nohighlight">\(\Delta_{lettskip}\)</span> med tilhørende langskipstyngdepunkt, <span class="math notranslate nohighlight">\(Lcg\)</span> og vertikaltyngdepunkt, <span class="math notranslate nohighlight">\(Vcg\)</span>.</p>
+<p>Beregn lettskipsdeplasementet, <span class="math notranslate nohighlight">\(\Delta_{lettskip}\)</span> med tilhørende samlet langskipstyngdepunkt, <span class="math notranslate nohighlight">\(LCG\)</span> og vertikaltyngdepunkt, <span class="math notranslate nohighlight">\(VCG\)</span>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># skriv din kode her</span>
@@ -431,11 +455,11 @@ document.write(`
 </div>
 </div>
 </div>
-<p>Fasit:  <span class="math notranslate nohighlight">\(\Delta = 2582t\)</span>, <span class="math notranslate nohighlight">\(Lcg = 49.9m\)</span> og <span class="math notranslate nohighlight">\(Vcg = 7.05m\)</span></p>
+<p>Fasit:  <span class="math notranslate nohighlight">\(\Delta = 2582t\)</span>, <span class="math notranslate nohighlight">\(LCG = 49.9m\)</span> og <span class="math notranslate nohighlight">\(VCG = 7.05m\)</span></p>
 </section>
 <section id="oppgave-4">
 <h2>Oppgave 4<a class="headerlink" href="#oppgave-4" title="Permalink to this heading">#</a></h2>
-<p>For skipet under bygging i oppgave 3 har ingeniørene beregnet <span class="math notranslate nohighlight">\(GM_0=1.03m\)</span> basert på samlet <span class="math notranslate nohighlight">\(Vcg=7.05m\)</span>. Nå viser det seg at tyngdepunktet til byggeblokkene varierer med <span class="math notranslate nohighlight">\(+/-15\%\)</span> fra opprinnelig estimat. Vil skipet fremdeles klare <span class="math notranslate nohighlight">\(GM_0\)</span>-kravet på <span class="math notranslate nohighlight">\(15cm\)</span>?</p>
+<p>For skipet under bygging i oppgave 3 har ingeniørene beregnet <span class="math notranslate nohighlight">\(GM_0=1.03m\)</span> basert på samlet <span class="math notranslate nohighlight">\(VCG=7.05m\)</span>. Nå viser det seg at tyngdepunktet til byggeblokkene varierer med <span class="math notranslate nohighlight">\(+/-15\%\)</span> fra opprinnelig estimat. Vil skipet fremdeles klare <span class="math notranslate nohighlight">\(GM_0\)</span>-kravet på <span class="math notranslate nohighlight">\(15cm\)</span>?</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Skriv din kode her</span>
